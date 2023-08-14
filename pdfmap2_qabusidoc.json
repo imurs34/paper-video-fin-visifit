@@ -1,0 +1,891 @@
+[
+  {
+    "": 1,
+    "slide_id": 0,
+    "start": 4.2,
+    "textual_group": "Structuring Iterative Improvement for\nNovice Designers\n\n | Aeration is about improving a prototype, but it aration is never a straight shot from A to B.how can we structure iteration to guide users to retire Fidelity prototypes, We focus this question on visual Blends which are when two objects are combined seamlessly and aesthetically into one visual to convey a new meaning, some examples are shown on the left.",
+    "sections": "",
+    "paragraph":[
+
+    ],    "scores": [
+
+    ]
+  },
+  {
+    "": 2,
+    "slide_id": 1,
+    "start": 9.6,
+    "textual_group": "But iteration is never a straight shot from A to B.\n\n | We propose the following design principles to structure, iteration one structure, the problem into subtasks and provide interactive tools specific to each subtask.",
+    "sections": "",
+    "paragraph":[
+      
+    ],
+    "scores": [
+      
+    ]
+  },
+  {
+    "": 3,
+    "slide_id": 2,
+    "start": 42,
+    "textual_group": "(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeaning\n\n |",
+    "sections": "['INTRODUCTION', 'INTRODUCTION']",
+    "paragraph":[
+      1,
+      4
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 4,
+    "slide_id": 3,
+    "start": 43,
+    "textual_group": "“-|.|.-”=\".=-\n(def) two objects are combined\n\nseamlessly and aesthetically\n\ninto one visual, to convey a new\nmeanlnn\n\n | To identify secondary dyemensions to structure.The iteration process for visual Blends.Those dimensions are silhouette colors, and internal details.Three provide high-level tools related to the secondary visuals.I mentioned I can preview results without requiring expert knowledge or tedious low-level manipulation.",
+    "sections": "['INTRODUCTION']",
+    "paragraph":[
+      5
+    ],      
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 5,
+    "slide_id": 4,
+    "start": 65,
+    "textual_group": "Structure the problem into subtasks and provide interactive toois speciﬁc to each subtask.\n\n |",
+    "sections": "['RELATED WORK']",
+    "paragraph":[
+      14
+    ],      
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 6,
+    "slide_id": 5,
+    "start": 62,
+    "textual_group": "",
+    "sections": "['RELATED WORK']",
+    "paragraph": [
+      14
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 7,
+    "slide_id": 6,
+    "start": 63,
+    "textual_group": "",
+    "sections": "['RELATED WORK', 'RELATED WORK', 'RELATED WORK', 'RELATED WORK']",
+    "paragraph": [
+      15,
+      16,
+      14,
+      24
+    ],
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 8,
+    "slide_id": 7,
+    "start": 63,
+    "textual_group": "",
+    "sections": "['RELATED WORK', 'RELATED WORK', 'RELATED WORK', 'RELATED WORK']",
+    "paragraph": [
+      15,
+      16,
+      14,
+      24
+    ],
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 9,
+    "slide_id": 8,
+    "start": 84,
+    "textual_group": "",
+    "sections": "['RELATED WORK', 'RELATED WORK', 'RELATED WORK', 'RELATED WORK']",
+    "paragraph": [
+      15,
+      16,
+      14,
+      24
+    ],
+    "scores": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 10,
+    "slide_id": 9,
+    "start": 92,
+    "textual_group": "",
+    "sections": "['RELATED WORK']",
+    "paragraph": [
+      24
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 11,
+    "slide_id": 10,
+    "start": 101,
+    "textual_group": "",
+    "sections": "['RELATED WORK']",
+    "paragraph": [
+      24
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 12,
+    "slide_id": 11,
+    "start": 101,
+    "textual_group": "",
+    "sections": "['RELATED WORK']",
+    "paragraph": [
+      24
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 13,
+    "slide_id": 12,
+    "start": 126,
+    "textual_group": "",
+    "sections": "['METHOD']",
+    "paragraph": [
+      26
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 14,
+    "slide_id": 13,
+    "start": 124,
+    "textual_group": "Before VisiFit After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 15,
+    "slide_id": 14,
+    "start": 126,
+    "textual_group": "u» sﬂhwenl m A\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 16,
+    "slide_id": 15,
+    "start": 127,
+    "textual_group": "Na man-11m\n\n | Blend the Snowman tis, not as iconic without his facial details us.We want to extract them using interactive, grab cut and transpose them onto the visual blend.We complete the workflow efficiently completing a structured iterative improvement process here.We demonstrate visit that again on another initial visual blend.This accounts for user choice and control over.What affects users would actually like to apply based on the effects previews.They interact with note that users are always abstracted from doing low-level manipulation to achieve any of these effects.Here, we see the visible and base and visit it improves Blind Side by Side.The following is a sequence of our systems results.Statistical results.One, we show that in a study of 10 novice designers novices iterated upon Blends in under 4 minutes, to improve the visual blends 76.1%of the time to additionally, 70.1%",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 17,
+    "slide_id": 16,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 18,
+    "slide_id": 17,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 19,
+    "slide_id": 18,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 20,
+    "slide_id": 19,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 21,
+    "slide_id": 20,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 22,
+    "slide_id": 21,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 23,
+    "slide_id": 22,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 24,
+    "slide_id": 23,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 25,
+    "slide_id": 24,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 26,
+    "slide_id": 25,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 27,
+    "slide_id": 26,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 28,
+    "slide_id": 27,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 29,
+    "slide_id": 28,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 30,
+    "slide_id": 29,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 31,
+    "slide_id": 30,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION']",
+    "paragraph": [
+      11
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 32,
+    "slide_id": 31,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD', 'METHOD']",
+    "paragraph": [
+      25,
+      26
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 33,
+    "slide_id": 32,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD', 'METHOD', 'METHOD', 'METHOD', 'METHOD']",
+    "paragraph": [
+      28,
+      29,
+      30,
+      48,
+      25
+    ],
+    "scores": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 34,
+    "slide_id": 33,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 35,
+    "slide_id": 34,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 36,
+    "slide_id": 35,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 37,
+    "slide_id": 36,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 38,
+    "slide_id": 37,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 39,
+    "slide_id": 38,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 40,
+    "slide_id": 39,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      25
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 41,
+    "slide_id": 40,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD', 'METHOD']",
+    "paragraph": [
+      25,
+      31
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 42,
+    "slide_id": 41,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD', 'METHOD']",
+    "paragraph": [
+      34,
+      35,
+      40
+    ],
+    "scores": [
+      0,
+      0,
+      0
+
+    ]
+  },
+  {
+    "": 43,
+    "slide_id": 42,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['METHOD']",
+    "paragraph": [
+      42
+    ],
+    "scores": [
+      0
+
+    ]
+  },
+  {
+    "": 44,
+    "slide_id": 43,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'RESULTS', 'RESULTS']",
+    "paragraph": [
+      50,
+      57,
+      54
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 45,
+    "slide_id": 44,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS']",
+    "paragraph": [
+
+      54
+    ],
+    "scores": [
+
+      0
+    ]
+  },
+  {
+    "": 46,
+    "slide_id": 45,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS']",
+    "paragraph": [
+
+      54
+    ],
+    "scores": [
+
+      0
+    ]
+  },
+  {
+    "": 47,
+    "slide_id": 46,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 48,
+    "slide_id": 47,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 49,
+    "slide_id": 48,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 50,
+    "slide_id": 49,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 51,
+    "slide_id": 50,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 52,
+    "slide_id": 51,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+
+      55,
+      86
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 53,
+    "slide_id": 52,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSIONS']",
+    "paragraph": [
+      75,
+      88
+    ],
+    "scores": [
+
+      0,
+      0
+    ]
+  },
+  {
+    "": 54,
+    "slide_id": 53,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['DISCUSSIONS']",
+    "paragraph": [
+      88
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 55,
+    "slide_id": 54,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['DISCUSSIONS']",
+    "paragraph": [
+      88
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 56,
+    "slide_id": 55,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['DISCUSSIONS']",
+    "paragraph": [
+      88
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 57,
+    "slide_id": 56,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['DISCUSSIONS']",
+    "paragraph": [
+      88
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 58,
+    "slide_id": 57,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['DISCUSSIONS']",
+    "paragraph": [
+      88
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 59,
+    "slide_id": 58,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['INTRODUCTION', 'RESULTS']",
+    "paragraph": [
+      11,
+      72
+    ],
+    "scores": [
+      0,
+      0
+    ]
+  },
+  {
+    "": 60,
+    "slide_id": 59,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS']",
+    "paragraph": [
+      75
+    ],
+    "scores": [
+      0
+    ]
+  },
+  {
+    "": 61,
+    "slide_id": 60,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      76,
+      89,
+      92
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "": 62,
+    "slide_id": 61,
+    "start": 214,
+    "textual_group": "After VisiFit\n\n |",
+    "sections": "['RESULTS', 'DISCUSSION', 'DISCUSSION']",
+    "paragraph": [
+      76,
+      89,
+      92
+    ],
+    "scores": [
+      0,
+      0,
+      0
+    ]
+  }
+]

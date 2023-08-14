@@ -1,0 +1,64 @@
+[
+  {
+    "index": 0,
+    "colour": "#C6DEF1",
+    "start": "00:18",
+    "final": "00:52",
+    "label": "1 Introduction"
+  },
+  {
+    "index": 1,
+    "colour": "#FFF1E6",
+    "start": "00:52",
+    "final": "02:02",
+    "label": "2 Related Work"
+  },
+  {
+    "index": 2,
+    "colour": "#f5f5dc",
+    "start": "02:02",
+    "final": "02:13",
+    "label": "3 Method"
+  },
+  {
+    "index": 3,
+    "colour": "#C6DEF1",
+    "start": "02:13",
+    "final": "03:01",
+    "label": "1 Introduction"
+  },
+  {
+    "index": 4,
+    "colour": "#FFF1E6",
+    "start": "03:01",
+    "final": "05:35",
+    "label": "3 Method"
+  },
+  {
+    "index": 5,
+    "colour": "#F9C6C9",
+    "start": "05:35",
+    "final": "06:43",
+    "label": "4 Results"
+  },
+  {
+    "index": 6,
+    "colour": "#DBE7E4",
+    "start": "06:43",
+    "final": "06:55",
+    "label": "5 Discussion"
+  },
+  {
+    "index": 7,
+    "colour": "#F9C6C9",
+    "start": "06:55",
+    "final": "08:26",
+    "label": "4 Results"
+  }
+
+
+
+
+  
+  
+]

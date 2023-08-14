@@ -1,0 +1,2795 @@
+[
+    {
+        "section_id": 0,
+        "id": 0,
+        "paragraphs": "Understanding Questions that Arise When Working withBusiness DocumentsFARNAZ JAHANBAKHSH\u2217, Computer Science and Artificial Intelligence Laboratory, MassachusettsInstitute of Technology, USAELNAZ NOURI, Microsoft Research, USAROBERT SIM, Microsoft Research, USARYEN W. WHITE, Microsoft Research, USAADAM FOURNEY, Microsoft Research, USAWhile digital assistants are increasingly used to help with various productivity tasks, less attention has beenpaid to employing them in the domain of business documents. To build an agent that can handle users\u2019information needs in this domain, we must first understand the types of assistance that users desire whenworking on their documents. In this work, we present results from two user studies that characterize theinformation needs and queries of authors, reviewers, and readers of business documents. In the first study, weused experience sampling to collect users\u2019 questions in-situ as they were working with their documents, andin the second, we built a human-in-the-loop document Q&A system which rendered assistance with a varietyof users\u2019 questions. Our results have implications for the design of document assistants that complement AIwith human intelligence including whether particular skillsets or roles within the document are needed fromhuman respondents, as well as the challenges around such systems.CCS Concepts: \u2022 Human-centered computing \u2192 Empirical studies in HCI.Additional Key Words and Phrases: Document-centered Assistance, Productivity, Digital Assistants, HybridAssistants, Question AnsweringACM Reference Format:Farnaz Jahanbakhsh, Elnaz Nouri, Robert Sim, Ryen W. White, and Adam Fourney. 2022. UnderstandingQuestions that Arise When Working with Business Documents. Proc. ACM Hum.-Comput. Interact. 6, CSCW2,Article 341 (November 2022), 24 pages. https://doi.org/10.1145/3555761",
+        "pageIndex": 1,
+        "start": "00:07",
+        "end": "00:15",
+        "highlights": [
+            {
+                "height": 46.811216444444455,
+                "width": 81.43263668806584,
+                "left": 9.341152263374486,
+                "top": 11.039224000000004
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 1,
+        "paragraphs": "1 IntroductionSystems and software are increasingly incorporating intelligent digital assistants in order to helppeople be ever more productive even as systems, documents, and information spaces become morecomplex. For example, at home, people can rely on their voice assistants to manage processes suchas shopping, cooking, and to quickly retrieve information from the web [22, 40, 46]. At work, digitalassistants help with scheduling meetings, triaging emails, and managing task lists [10, 11, 42].",
+        "pageIndex": 1,
+        "start": "00:16",
+        "end": "00:39",
+        "highlights": [
+            {
+                "height": 10.500943249999995,
+                "width": 81.14078723427986,
+                "left": 9.42962962962963,
+                "top": 59.43742977777778
+            }
+        ]
+    },
+    {
+        "section_id": 2,
+        "id": 2,
+        "paragraphs": "Authors\u2019 addresses: Farnaz Jahanbakhsh, Computer Science and Artificial Intelligence Laboratory, Massachusetts Institute ofTechnology, Cambridge, USA, farnazj@mit.edu; Elnaz Nouri, Microsoft Research, Redmond, USA, Elnaz.Nouri@microsoft.com; Robert Sim, Microsoft Research, Redmond, USA, rsim@microsoft.com; Ryen W. White, Microsoft Research, Redmond,USA, ryenw@microsoft.com; Adam Fourney, Microsoft Research, Redmond, USA, Adam.Fourney@microsoft.com.",
+        "pageIndex": 1,
+        "start": "00:16",
+        "end": "00:39",
+        "highlights": [
+            {
+                "height": 5.680927527777782,
+                "width": 81.44298835037034,
+                "left": 9.380452674897118,
+                "top": 74.27199376388889
+            }
+        ]
+    },
+    {
+        "section_id": 3,
+        "id": 3,
+        "paragraphs": "Permission to make digital or hard copies of part or all of this work for personal or classroom use is granted without feeprovided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice andthe full citation on the first page. Copyrights for third-party components of this work must be honored. For all other uses,contact the owner/author(s).\u00a9 2022 Copyright held by the owner/author(s).2573-0142/2022/11-ART341https://doi.org/10.1145/3555761",
+        "pageIndex": 1,
+        "start": "00:16",
+        "end": "00:39",
+        "highlights": [
+            {
+                "height": 9.970371972222225,
+                "width": 81.43408170965017,
+                "left": 9.316460905349794,
+                "top": 81.41199376388889
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 4,
+        "paragraphs": "One workplace area of interest that has not seen significant progress is document-centeredassistance. In this scenario, people engage with an intelligent digital assistant to consume andoperate over written documents to perform complex tasks more quickly. Such assistance can alsobe useful in contexts where working with business documents is challenging, for example, whenusing a mobile phone [25].",
+        "pageIndex": 2,
+        "start": "00:16",
+        "end": "00:39",
+        "highlights": [
+            {
+                "height": 8.554071277777792,
+                "width": 81.14122796658438,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 5,
+        "paragraphs": "To achieve this vision and build an agent that is prepared to handle a wide variety of requestsfrom the user, we must first understand and characterize the types of assistance that people wouldwant as they are working on their documents. While prior work has studied the types of queries thatpeople would generate given one or a collection of public documents [12, 33, 49, 62], it is conceivablethat these queries may not generalize to private or business documents that are in various stagesof preparation. The information needs in a document-centric context could be especially differentgiven that users may have prior interactions with a document and may not want to only read, butalso review, or add information to the document. Therefore, to understand users\u2019 actual needs, itis important that we involve authors, reviewers, and readers of such documents in the process ofgenerating queries. In addition, for these questions to have ecological validity, we must collectthem in-situ as users are working on their documents and their information needs arise.",
+        "pageIndex": 2,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 18.516710166666662,
+                "width": 81.21672610288066,
+                "left": 9.353909465020577,
+                "top": 19.85749619444445
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 6,
+        "paragraphs": "In this work, we conducted two user studies to gain insight into the distribution of querieswith which users need support in a document-centric scenario. Our focus in these studies wason answering questions rather than on executing commands or taking direct action. For example,participants could ask about facts, or for technical instruction, but were discouraged from makingrequests for the system to directly alter document content. In the first study, we collected questionsvia an experience sampling method [35] by having participants install a Microsoft Word add-inwhich, at random points in time while they were working on a document, would prompt themwith a short questionnaire asking about their current information need, but did not directly answerparticipant queries. In the second study, participants submitted their questions via an add-in andreceived answers from a human-in-the-loop document Q&A system. Given a document and aquestion, a Q&A ML model extracted a passage out of the document as a candidate answer [55].A human worker would then decide between transmitting the candidate answer to the studyparticipant, or composing and transmitting their own answer in cases where the AI-providedanswer was incorrect or insufficient.",
+        "pageIndex": 2,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 23.49796016666668,
+                "width": 81.53210110683128,
+                "left": 9.353909465020577,
+                "top": 38.122357305555546
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 7,
+        "paragraphs": "We expected that answering some of the potential questions would be beyond the capabilities ofcurrent systems and there may be a need for human intelligence. We hypothesized that if a Q&Asystem in this domain were to be deployed to accommodate user needs, at least for the present, itwould need to incorporate human workers. The studies would then allow us to investigate whichtypes of questions needed human worker support, to what extent this support was needed, andwhat capabilities the human workers should have to accommodate the questions. We conductedthe second study as a technology probe into the problem space, to not only understand the use of adocument Q&A assistant in a real world setting, but also field test the technology that is available,and understand how we can address the inadequacies of the current technology [24].",
+        "pageIndex": 2,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 15.195737944444447,
+                "width": 81.441196827572,
+                "left": 9.353909465020577,
+                "top": 61.368468416666666
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 8,
+        "paragraphs": "The settings of both of these studies, the first simply asking about information needs and thesecond augmenting the AI with human intelligence, allowed users to be liberal in the questionsthey posed and not limited to the capabilities of current digital assistants, or the in-applicationsearch capabilities integrated in some productivity software (e.g., [7]). Therefore, these approachesallow us to investigate what capabilities to incorporate in document assistants prior to making deepinvestments in their development. We found for instance, that while factual questions, i.e., questionsthat can be answered by extracting a passage out of a document, are the focus of state-of-the-artQ&A datasets and models [43, 49], these types of questions are in fact not asked often in thedomain of business documents. In addition, the study results give us an understanding that, for",
+        "pageIndex": 2,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 15.195737944444444,
+                "width": 81.17981561728394,
+                "left": 9.42962962962963,
+                "top": 76.31249619444445
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 9,
+        "paragraphs": "the foreseeable future, effective assistance will likely involve at least some human-in-the loopor hybrid intelligence\u2014important classes of questions are best answered by document authors,collaborators, domain experts, and other types of human respondents. Even in these cases, AI mayassist in question triage, and in routing questions to the appropriate parties.",
+        "pageIndex": 3,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 6.8936546111111205,
+                "width": 81.36590714567897,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 10,
+        "paragraphs": "The main contributions of this work are the characterization of the types of assistance that usersdesire when working on business documents and implications for the design of digital assistantsthat can provide such assistance. Specifically, our research seeks to answer the following researchquestions:",
+        "pageIndex": 3,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 6.893515722222234,
+                "width": 81.14115447736624,
+                "left": 9.42962962962963,
+                "top": 18.19707952777777
+            }
+        ]
+    },
+    {
+        "section_id": 1,
+        "id": 11,
+        "paragraphs": "\u2022 What types of document-related questions do people desire support with from a digitalassistant?\u2022 How are the distribution of questions different depending on whether the user is an author,reviewer, or reader of the document?\u2022 What skillsets and roles are needed from human respondents to accommodate requests in ahuman-in-the-loop document Q&A assistant?",
+        "pageIndex": 3,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 10.880044972222224,
+                "width": 78.18179660880655,
+                "left": 9.42962962962963,
+                "top": 24.8690225
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 12,
+        "paragraphs": "2 Related WorkWe situate our work in the context of prior work on document question answering, automatedand hybrid digital assistants, and studies of tools that facilitate authoring, reviewing, or readingdocuments.",
+        "pageIndex": 3,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 7.179971027777772,
+                "width": 81.23890130337445,
+                "left": 9.331275720164609,
+                "top": 37.257152000000005
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 13,
+        "paragraphs": "2.1 Document Question AnsweringRecent years have seen significant progress in AI based methods for finding answers to questionsgiven one or a collection of documents. This body of work includes factoid Q&A, documentunderstanding, summarization, and comparison [8, 15, 16, 19, 26, 48, 61, 64].",
+        "pageIndex": 3,
+        "start": "00:40",
+        "end": "00:52",
+        "highlights": [
+            {
+                "height": 7.17997102777778,
+                "width": 81.14008821234566,
+                "left": 9.42962962962963,
+                "top": 45.94520755555555
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 14,
+        "paragraphs": "Most datasets for document question answering contain factoid questions generated by crowdworkers or search queries on documents found on the Web [12, 29, 33, 43, 49, 62, 63]. Models trainedon these datasets therefore may fail to generalize to personal and business documents with whichpeople have richer context and possibly prior interactions. Indeed, previous work in the contextof email and Web search has shown that people\u2019s information needs are different depending onwhether they are a co-owner of a document [3].",
+        "pageIndex": 3,
+        "start": "00:52",
+        "end": "01:12",
+        "highlights": [
+            {
+                "height": 10.21448794444445,
+                "width": 81.21716952230454,
+                "left": 9.353909465020577,
+                "top": 52.87332952777778
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 15,
+        "paragraphs": "Closer to our scenario, Ter Hoeve et al. leveraged crowd workers, and a corpus of public docu-ments mined from the Web, to investigate the conversational assistance that people would want ina document consumption scenario. The workers were trained to imagine having some familiaritywith the document subject matter, and to produce questions about a document based on its sum-mary [55]. However, all documents were presented in their final published forms, and participantsoften assumed the role of \u201creader\u201d, with only limited knowledge of document content or provenance.Related is a study by Todi et al. that explored the types of information users would want to accessconversationally from a GUI dataset. The researchers asked a set of designers, developers and endusers, with no prior knowledge about the kinds of GUIs that could be found in the dataset, to posequeries to a hypothetical chatbot that would help seek information from the dataset [56].",
+        "pageIndex": 3,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 16.856293500000007,
+                "width": 81.56284745111111,
+                "left": 9.353909465020577,
+                "top": 62.83596841666667
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 16,
+        "paragraphs": "We extend the body of work on question answering to better understand people\u2019s informationneeds while working with business documents across various states of preparation and familiarity.To this end, it is imperative that we consider queries from authors, reviewers, and readers of suchdocuments, and capture their actual needs which may be unique to their role and context. It is alsodesirable for these questions to be captured in-situ as users\u2019 needs arise. Therefore, in this work,we use two methods: experience sampling and a human-in-the-loop document Q&A system, tocapture users\u2019 information needs while they are working on their documents.",
+        "pageIndex": 3,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 11.874904611111113,
+                "width": 81.5328609472428,
+                "left": 9.353909465020577,
+                "top": 79.44041286111111
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 17,
+        "paragraphs": "2.2 Digital and Hybrid AssistanceDigital agents are increasingly used in areas such as entertainment, e-commerce, healthcare, andto help with various productivity tasks [14, 22, 44]. In the workplace, such assistants help withscheduling meetings, triaging emails, managing task lists, and even performing data science tasks[10, 11, 13, 42]. In the context of documents, digital assistants now perform rich pre-defined tasks,such as PowerPoint theme suggestions, or intelligent placeholders in Microsoft Word [1, 28].Document-centric assistance can also be useful in contexts that have been reported as challenging,e.g., when using a mobile phone [25], or when in a vehicle [38].",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 13.82177658333335,
+                "width": 81.45642525761318,
+                "left": 9.429629629629623,
+                "top": 11.683957555555551
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 18,
+        "paragraphs": "Although these automated systems can accomplish many tasks, they still have limited capabilitiesin understanding complex or nuanced requests, or when requests simply fall outside of the systems\u2019domains [57]. To augment their abilities, a body of work has attempted to incorporate humanintelligence into the workflow of such systems [30]. For instance, Lasecki et al. developed Chorus,a conversational agent that allows users to interact with a group of crowd workers as if they are asingle conversational partner [37]. Commercial services such as Facebook M, Clara, and X.ai alsoemploy a hybrid of machine and human knowledge to run errands for consumers [20, 23, 39].",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 11.874904611111113,
+                "width": 81.36639865024692,
+                "left": 9.42962962962963,
+                "top": 25.25388508333332
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 19,
+        "paragraphs": "Closest to this scenario and to our work is Soylent, a word processor add-in that employscrowdworkers to help users edit Word documents [4]. Indeed, Soylent serves as an inspirationalmodel for our work, but is limited in that it considers only a few specific editing scenarios, andlargely overlooks opportunities to facilitate document consumption. In consumption scenarios, itis conceivable that different questions should be routed to different types of respondents, similarto social Q&A systems such as IM-an-Expert [51], Aardvark [21], and Zephyr [2] which routedquestions to individuals with expertise or interest in the subject matter of the question.",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 11.874904611111113,
+                "width": 81.17936873522635,
+                "left": 9.42962962962963,
+                "top": 36.87694063888888
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 20,
+        "paragraphs": "Our work aims to bridge these gaps by examining the types of document-centric questions withwhich people need support. It is conceivable that for the foreseeable future, accommodating somerequests in this domain requires some degree of human assistance. Understanding users\u2019 needs,including what types of human intelligence we should incorporate into such a system is the firststep towards designing systems that can accommodate these needs.",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 8.55393238888889,
+                "width": 81.44162731028807,
+                "left": 9.353909465020577,
+                "top": 48.50013508333333
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 21,
+        "paragraphs": "2.3 Tools that Support Authoring, Reviewing, or Reading DocumentsA body of work has developed or studied the usage of tools that help with authoring, reviewing, orreading documents. Among those that studied the usage of such tools, some characterized howpeople use existing collaborative document authoring tools such as Google Docs and MicrosoftOneDrive [45, 54, 65]. For instance, research reported on the role that the edit history feature playsin assessing a team\u2019s progress and the amount of individual effort [5]. Birnholtz et al. found thatusers write utterances in the documents that are not related to the content but are instead intendedfor communicating with their collaborators [6]. Wang et al. found that document collaboratorsoften have different inherited role structures (e.g., employees and managers) and that currentauthorship tools do not support these roles. For instance, students and employees reported thatthey do not feel comfortable editing the text written by their advisors (or managers) [59]. Posnerand Baecker characterized the collaborative writing process as including six activities: brainstorm,research, plan, write, edit, and review. They suggested that a collaborative writing tool shouldsupport all these activities [47].",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 23.78441547222221,
+                "width": 81.43822212502062,
+                "left": 9.357818930041152,
+                "top": 59.00645755555556
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 22,
+        "paragraphs": "A thread of work has focused on tools that help with authoring or reading of medical records. Thisdomain has been given special attention because physicians often need to retrieve a complete picturefrom a patient\u2019s records in just a few minutes before a consultation or emergency procedure [53].To facilitate reading and extracting information from electronic health records, a line of work haspresented automated techniques for summarizing these records and generating timelines of patients\u2019",
+        "pageIndex": 4,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 8.553932388888889,
+                "width": 81.51705218106996,
+                "left": 9.368106995884776,
+                "top": 82.53916286111111
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 23,
+        "paragraphs": "problems [17, 18]. Sultanum et al. presented Doccurate, a tool for visualizing large patient datarecords that allows physicians to curate concepts (e.g., cardiovascular issues) at the desired level ofgranularity for their practice [53]. Murray et al. developed MedKnowts to help facilitate the practiceof reading medical data as well as inputting it. MedKnowts is a text editor for electronic healthrecords that presents a unified interface to document symptoms, retrieve past records, medicines,lab results, etc. for better efficiency and error prevention. The tool enables automatic structureddata capturing via a natural language interface and offers features such as autocomplete [41].",
+        "pageIndex": 5,
+        "start": "01:14",
+        "end": "01:50",
+        "highlights": [
+            {
+                "height": 11.874904611111122,
+                "width": 81.36667176497942,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 4,
+        "id": 24,
+        "paragraphs": "In our work, we use the interaction paradigm of a digital assistant to facilitate task completionor accessing information in the domain of business documents. This framing would allow us togain a comprehensive view of the types of queries with which authors, reviewers, and readers ofdocuments need help; whereas framing the embodiment of interaction otherwise, such as a searchengine or a tool with a simpler user interface, could have led users to constrain their questions forinstance, to those that could be answered by document or passage retrieval.",
+        "pageIndex": 5,
+        "start": "01:51",
+        "end": "02:00",
+        "highlights": [
+            {
+                "height": 10.21448794444445,
+                "width": 81.17882345711935,
+                "left": 9.42962962962963,
+                "top": 23.178329527777777
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 25,
+        "paragraphs": "3 MethodTo investigate our three research questions, we designed a two-phase study. In the first phase,we collected document-oriented questions with which people reported needing support via anexperience-sampling method. In this first phase, participants detailed their information needs, butdid not expect, nor were provided with, answers to their queries. In the second phase, we designedand developed a human-in-the-loop system that collected users\u2019 questions about their documentsand provided responses to them. This system consisted of an AI component and human operatorswho supervised the AI and answered questions if the AI failed to produce a satisfactory answer.The experience sampling in phase 1 was a step along the path to our vision of a hybrid human-AIdocument Q&A system. Phase 1 served to inform our choices for the prototype and second studyphase. Specifically, phase 1 provided us with initial insights into the types of questions peoplemight ask, as well as the types of people who might need to be recruited to answer those questions\u2013 a key factor in staffing a hybrid Q&A system. Conversely, the tool we built in phase 2 was anactual prototype of the type of Q&A system that we ultimately envision. The prototype directlyenabled us to gain insight into the feasibility of generating answers in a document Q&A context.It also allowed us to view the documents together with the questions, and obtain feedback aboutanswer quality and system usefulness.",
+        "pageIndex": 5,
+        "start": "01:51",
+        "end": "02:00",
+        "highlights": [
+            {
+                "height": 28.7658043611111,
+                "width": 81.6817983203292,
+                "left": 9.204115226337448,
+                "top": 38.94284644444445
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 26,
+        "paragraphs": "For the questions to have ecological validity, it was important that we collect them in-situ asusers were authoring, reviewing, or reading a document. Therefore, we opted for using an add-inthat would open on the side of a document, so that users could ask questions when they wereworking on a document and without leaving the application. For each phase of the study, wedesigned and developed an add-in that would work in Microsoft Word documents.",
+        "pageIndex": 5,
+        "start": "02:02",
+        "end": "02:10",
+        "highlights": [
+            {
+                "height": 8.553932388888887,
+                "width": 81.21671064855964,
+                "left": 9.353909465020577,
+                "top": 67.45680175000001
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 27,
+        "paragraphs": "As noted earlier, the scope of document assistance in both studies was question answering ratherthan application commanding and automation. This focus was conveyed through the wordingof the prompts as well as in the recruitment emails and consent forms where we outlined thatthe study purpose is to understand what kinds of questions users have about documents theyvisit. In both phases, after consenting to the study, participants filled out a survey asking aboutdemographics, their Word document consumption, and the readership of the Word documents theyauthored. Then they received instructions on how to install the add-in. Our study was approved bythe Institutional Review Board in our organization.",
+        "pageIndex": 5,
+        "start": "02:02",
+        "end": "02:10",
+        "highlights": [
+            {
+                "height": 13.535321277777776,
+                "width": 81.2457275958848,
+                "left": 9.378395061728394,
+                "top": 75.75902397222222
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 28,
+        "paragraphs": "3.1 Phase 1 - Experience SamplingAt random points in time, the experience-sampler Microsoft Word add-in would prompt the userasking what question they had about the document at that moment, in addition to a few follow-upquestions to better understand the context (Figure 1).",
+        "pageIndex": 6,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 7.179971027777787,
+                "width": 81.25241550238684,
+                "left": 9.357818930041152,
+                "top": 11.683957555555551
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 29,
+        "paragraphs": "To communicate the type of system we were envisioning, the first question was \u201cImagine Wordcould connect with a skilled assistant that could answer your questions about a document. Is there anyquestion about this document you would like to ask the assistant right now to help with your work?\u201dTo understand the perceived complexity of the question, the add-in then asked \u201cHow long do youthink it would take you to answer this question?\u201d To gain insight into how questions can be routedto respondents in a human-in-the-loop Q&A system, the add-in also asked \u201cWho do you think couldanswer this question?\u201d The answer choices to this question included: \u201cThe author\u201d, \u201cA domain expert\u201d,\u201cA Microsoft Word expert\u201d, \u201cSomeone familiar with the doc\u201d, \u201cSomeone with enough time to read thedoc\u201d, \u201cOther\u201d along with a free-form text for elaboration, and \u201cN/A\u201d. Because we expected the roleof the user in the document to impact the questions that they ask, we also collected informationabout their contribution to the document: \u201cWhat best describes your primary role in this document?\u201d(Reader, Reviewer, Author/Co-author), \u201cHave you contributed to this document?\u201d (I have edited thedocument, I have commented on the document, I have not contributed to the document), \u201cHow longago did you contribute to this document?\u201d (In the past 24 hrs, In the past week, Longer ago, Never).In addition to capturing user responses, at the time of submitting the add-in survey, the add-incollected contextual information about the document including the document\u2019s number of words,images, tables, lists, comments, timestamps (e.g., creation date, last modified date, date commentswere posted, etc.), number of authors, filename, file size, URL, the location of the user\u2019s cursorwhen asking the question, and whether the user submitting the survey was the creator, author, orthe most recent contributor to the document. While we did not directly collect document content,we note that filenames often resembled document titles1.",
+        "pageIndex": 6,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 35.12101572222222,
+                "width": 81.76390202251027,
+                "left": 9.122222222222224,
+                "top": 18.612218416666664
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 30,
+        "paragraphs": "To minimize fatigue, we limited the number of prompts to six per day. Participants could answerthe experience sampling questions whenever they wanted without waiting for the prompt. At theconclusion of the one-week period of the study, we had collected a total of 101 questions. Then weasked participants to open Word or their cloud documents homepage, select one or a few Worddocuments from their Recommended or Most Recently Opened lists of documents, and submit upto five questions for these documents as if they were working with the documents at that time.The completion of this step was voluntary and participants were not compensated additionally forsubmitting these questions. This step resulted in 38 more questions. We inspected these questionsand found them to be extremely similar to those input earlier in the week, and thus we includethem in our analyses. In total, questions from Phase 1 were asked about 103 distinct documents by59 participants.",
+        "pageIndex": 6,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 18.516710166666677,
+                "width": 81.51733916954728,
+                "left": 9.368106995884776,
+                "top": 53.48138508333333
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 31,
+        "paragraphs": "3.2 Phase 2 - Human-in-the-loop Q&A SystemWe built a human-in-the-loop Q&A prototype for connecting users with knowledge workers whowould supervise and complement an AI trained to answer document-centered questions [55]. TheAI was a BERT Large model fine-tuned on the SQuAD2.0 [48] and DQA datasets [55]. Given aquestion and a document, the model would extract a passage out of the document if it detected ananswer for the question. Participants submitted and received answers to their questions through aMicrosoft Word add-in. With each question, participants submitted a share link to the documentif they consented to the digital assistant or a human knowledge worker accessing the documentto answer their question. We informed the participants that for the purpose of the study, the",
+        "pageIndex": 6,
+        "start": "02:12",
+        "end": "02:59",
+        "highlights": [
+            {
+                "height": 15.482193250000003,
+                "width": 81.23983720740745,
+                "left": 9.331275720164609,
+                "top": 73.2120131111111
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 32,
+        "paragraphs": "Fig. 1. The figure on the left shows the Experience Sampler add-in opened in a side pane in a Word document.The screenshot is captured at a time before the user is prompted about their information need. The figure onthe Right shows the questionnaire that the add-in presents to the user when the user is prompted.",
+        "pageIndex": 7,
+        "start": "02:12",
+        "end": "02:59",
+        "highlights": [
+            {
+                "height": 4.489998666666671,
+                "width": 81.4748533991769,
+                "left": 9.379835390946502,
+                "top": 35.07486244444445
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 33,
+        "paragraphs": "knowledge workers were limited to the researchers involved in the project, and noted that theresearchers were employed at the same technology company as the participants, thus minimizingconcerns about confidentiality\u2014indeed the document share links required corporate credentialsto access. If a user did not submit a share link to their document, we did not have access to thedocument\u2019s content. When submitting a question, the add-in would collect the same contextualinformation about the document as in Phase 1. For each document, the add-in would display theuser\u2019s previously asked questions in the form of expandable tiles. Because of the hybrid nature ofthe system, and the high level of human supervision, questions were not instantaneously answered.Participants were informed that their questions would be answered on a best effort basis and theremay be a delay in the responses that they would receive from the system. Once a question hadbeen answered or deemed unanswerable, the answer or the explanation for why the question couldnot be answered would appear below the question on the question tile. An icon on the question tilewould signal whether the question was answered yet or marked as unanswerable, and whether theuser had seen the answer or the explanation yet. In addition, users would receive email notificationsabout received answers. Figure 2 displays different states of the Q&A add-in.",
+        "pageIndex": 7,
+        "start": "02:12",
+        "end": "02:59",
+        "highlights": [
+            {
+                "height": 25.15837683333333,
+                "width": 81.53137270699591,
+                "left": 9.353909465020577,
+                "top": 42.96888508333333
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 34,
+        "paragraphs": "The knowledge workers\u2019 view contained all the questions submitted by users (see Figure 3). Aseach question arrived, the workers performed the first task of determining whether an answerto the question could possibly be provided at all. An example of a question that could not beanswered would be if the question appeared to refer to the content or the style of the document buta share link to the document was not provided or that the share link was not valid. The workerswould place the question in different queues based on this criterion. Additionally, workers assignedfiner-grained tags to questions and iterated over tags already assigned to prior questions as newones came in. This approach of assigning tags at question arrival helped with the organization ofthe questions and routing them to the different components of the system. In addition, the tagsserved as a basis for the taxonomy that we developed from the question pool.",
+        "pageIndex": 7,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 16.85615461111111,
+                "width": 81.29304927572015,
+                "left": 9.353909465020577,
+                "top": 67.87555175000001
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 35,
+        "paragraphs": "The workflow for answering questions was based on the question type. For questions about thedocument content, workers would manually access the document using the share link and theirpersonal credentials. They would then copy and paste the question and document content into acustom UI front-end for the ML Q&A model. If the AI-provided answer was unsatisfactory upon",
+        "pageIndex": 7,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 6.893654611111111,
+                "width": 81.18011900510285,
+                "left": 9.42962962962963,
+                "top": 84.47985730555557
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 36,
+        "paragraphs": "an initial inspection (e.g., if the selected passage did not seem to answer the question), workerswould answer the question by reading through its corresponding document. Workers answeredthe questions about metadata either by investigating the metadata captured by the add-in at thetime of question submission or by accessing the document through the share link if the requestedmetadata was not among the contextual information captured by the add-in. Questions about stylewere similarly answered by accessing the document. Some questions sought external informationthat was available on public resources. Workers answered these questions by retrieving relevantinformation using a search engine. If a question requested external information available onlywithin the company, workers used the internal repository of documents shared with employees tofind the requested content.",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 16.856293500000007,
+                "width": 81.2701721942387,
+                "left": 9.353909465020577,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 37,
+        "paragraphs": "In general, the delay in answers that the AI produced was not much different than those thehuman workers composed, since the time a question spent in the queue was the dominant sourceof delay across all categories.",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 5.233099055555562,
+                "width": 81.14099048395059,
+                "left": 9.42962962962963,
+                "top": 28.159718416666664
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 38,
+        "paragraphs": "When composing answers, workers imitated the response style of the component to which thequestion would be directed in a fully automated Q&A system. For instance, for answering questionsthat were about content and that the model could not answer, the workers would put togetherexcerpts extracted from the document with minimal change to enhance the flow of the text. Forresponding to a question whose answer could be found in the internal document repository or usinga search engine, the workers would reformulate the query, browse through the document theydeemed most relevant, and would copy the excerpt(s) containing the response, similar to how inresponse to a search query, the answer is automatically extracted from the most relevant documentand highlighted to the user. In contrast to most machine generated answers however, if the questionwas a yes/no question (rather than WH), the yes or no answer was provided first and it waspotentially followed by the excerpt on which it was based. For questions that required reasoning,the workers tried to provide succinct answers to minimize the perceived human interference (e.g.,the answer to the question\u201chow many questions in total?\u201d (p-2-11) was \u201c19\u201d). Some of the questionsin this category however, were formulated in a way that suggested the user expects a response eitherfrom a highly sophisticated AI or a human worker. In these cases, the responses also incorporateda superior level of understanding. An example is the following:",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 26.81893238888889,
+                "width": 81.44188969975308,
+                "left": 9.353909465020577,
+                "top": 33.14096841666667
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 39,
+        "paragraphs": "Question: \u201cI pasted in a table from a PPT slide and the table dimensions are larger than the pagewhich makes it cut off. Is there a way to have it auto-scale to the page, without having to manuallyresize the table?\u201d (p-2-9)",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 5.234482749999998,
+                "width": 81.14087538074067,
+                "left": 9.42962962962963,
+                "top": 59.70805175
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 40,
+        "paragraphs": "For questions that could not be answered, workers would submit a template response that wasdetermined based on the question type and what information was missing. An example of sucha template response was: \u201cCannot answer this question because the question appears to refer to the[document aspect] and [the problem with access to the document]\u201d. Depending on the type of thequestion, sometimes the answer contained additional directions for the user to pursue (e.g., \u201cCannotanswer this question as it appears to require domain knowledge. The question is likely best directed tothe document author, or to collaborators.\u201d). These template responses were developed as questionscame in.",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 13.535321277777776,
+                "width": 81.14123468522632,
+                "left": 9.42962962962963,
+                "top": 68.01027397222222
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 41,
+        "paragraphs": "The median response time in this phase was 17 minutes, with an average of 1.5 hours. Even outsidework hours, we tried to keep answering questions, but those questions sometimes experiencedlonger delays.",
+        "pageIndex": 8,
+        "start": "03:01",
+        "end": "03:15",
+        "highlights": [
+            {
+                "height": 5.233099055555555,
+                "width": 81.2168746419753,
+                "left": 9.353909465020577,
+                "top": 81.29374619444445
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 42,
+        "paragraphs": "At the conclusion of the two week period of the study, 41 users had submitted a total of 130questions asked about 61 distinct documents. We then distributed an end-of-study survey toparticipants asking about their experience with using the system. The survey questions asked for",
+        "pageIndex": 8,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 5.233099055555555,
+                "width": 81.17952657888893,
+                "left": 9.42962962962963,
+                "top": 86.27513508333334
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 43,
+        "paragraphs": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has askedabout the document on the collapsed tiles. The green notification icon indicates that the question has beenanswered but the user has not yet viewed the answer. The image in the center displays the full question andthe answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on theright shows another question from another document which could not be answered. The status is shownwith a warning icon.",
+        "pageIndex": 9,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 9.056248666666672,
+                "width": 81.20805268016463,
+                "left": 9.363168724279836,
+                "top": 35.905695777777765
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 44,
+        "paragraphs": "Fig. 3. The document Q&A worker view. Each question that was submitted via the Q&A addin would bevisible in this system and workers could visit the document to answer the question. Additionally, workerscould move the questions to different queues (filters seen on the left) or assign tags to each question (seen onthe right).",
+        "pageIndex": 9,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 6.011943111111111,
+                "width": 81.1836988009876,
+                "left": 9.38724279835391,
+                "top": 71.32514022222222
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 45,
+        "paragraphs": "examples of good and poor answers that they received from the system. For each example, thesurvey asked about the type of question they had asked and the delay in receiving the response. Thesurvey also asked about the overall satisfaction with the system (5 point Likert), how the systemcould be improved, and if they would recommend using the system to colleagues (5 point Likert). Atotal of 31 participants from this phase completed the questionnaire.",
+        "pageIndex": 9,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 8.554071277777778,
+                "width": 81.2125733020576,
+                "left": 9.42962962962963,
+                "top": 82.58846841666667
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 46,
+        "paragraphs": "3.3 Taxonomy DevelopmentTo develop a taxonomy of the types of questions with which people need support when workingon business documents, we combined the questions we collected from both phases of the study.The questions from Phase 2 already had preliminary labels assigned to them as the workers hadorganized the questions to decide the course of action for answering them. We divided thosesubmissions from Phase 1 that contained more than one question into idea units. With this division,the total number of questions from Phase 1 and Phase 2 was 272. A member of the research teamthen used open-coding to inductively develop codes that encompassed thematically related ideaunits. The categories assigned to each question were not a property of only the question but alsoof the document about which the question had been submitted. For instance, the question \u201cWhatis client sdk?\u201d can be a content-related question or one seeking external information dependingon whether \u201cclient sdk\u201d is defined in the document or simply mentioned in the document in somecontext.",
+        "pageIndex": 10,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 22.123998805555555,
+                "width": 81.51733916954731,
+                "left": 9.368106995884776,
+                "top": 11.683957555555551
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 47,
+        "paragraphs": "Through subsequent passes, the labels with too much overlap were consolidated and the onesshowing distinct ideas were further split into separate categories. Another member of the researchteam was then trained on the categories and used them to label a randomly sampled set of 80 ideaunits (29% of the total). Cohen\u2019s Kappa for the high-level categories was 0.86. To determine theinter-rater reliability for the subcategories, we assigned each category that did not have nestedsubcategories a subcategory with a value equal to the value of the category. Cohen\u2019s Kappa for thesubcategories was 0.75. Both Kappa values exceeded the recommended threshold for accepting theresults [34].",
+        "pageIndex": 10,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 13.535321277777784,
+                "width": 81.14078723427986,
+                "left": 9.42962962962963,
+                "top": 33.55610730555556
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 48,
+        "paragraphs": "3.4 ParticipantsWe recruited participants in both phases by randomly sampling email addresses from, and sendinginvitations to, employees of Microsoft. A total of 59 and 41 users participated in the Phase 1 andPhase 2 studies respectively. Across both studies, 37% of participants were female. The mediansof reported age and highest education achieved were 35-44 and Bachelor\u2019s degree. Participantscame from a diverse set of roles at the company including software and hardware engineering,sales, content writing, program management, finance, communications, etc. The medians for howfrequently the participants read or edited Word documents were both \u201ca few times per week\u201d.Participants copy-edited Word documents less often (a few times per month).",
+        "pageIndex": 10,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 15.482193249999996,
+                "width": 81.5541704452675,
+                "left": 9.331275720164609,
+                "top": 48.49034644444445
+            }
+        ]
+    },
+    {
+        "section_id": 5,
+        "id": 49,
+        "paragraphs": "We compensated participants from the Phase 1 study with a base amount of $20 in the formof an e-gift card. To encourage more involved participation, for each question that a participantsubmitted in each day, they would secure an entry into a raffle for 5 gift cards, each with a value of$50. We limited the number of entries per day for each participant to 25. The compensation forPhase 2 of the study was $20 e-gift cards. Although the duration of Phase 2 was longer than Phase1, receiving answers to questions about documents was another form of value that participantsreceived from the study.",
+        "pageIndex": 10,
+        "start": "03:17",
+        "end": "04:05",
+        "highlights": [
+            {
+                "height": 11.874904611111113,
+                "width": 81.22693495884775,
+                "left": 9.382510288065845,
+                "top": 63.72082952777778
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 50,
+        "paragraphs": "4 Results4.1 Taxonomy of Question TypesWe categorized the questions of our study based on what type of information they sought andwhere that information was available. Table 1 shows the full taxonomy as well as examples foreach category. Throughout the paper, where we present participants\u2019 questions, we identify themwith a string of the form \u2018p-\u2019 + phase number + participant number.",
+        "pageIndex": 10,
+        "start": "04:28",
+        "end": "04:50",
+        "highlights": [
+            {
+                "height": 11.054276583333332,
+                "width": 81.27772233991764,
+                "left": 9.331275720164609,
+                "top": 76.994652
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 51,
+        "paragraphs": "Participants used different languages for articulating their information needs. Some queries wererather verbose\u2014\u201cIs there a way to resolve comments and then make them not show up in the comments",
+        "pageIndex": 10,
+        "start": "04:28",
+        "end": "04:50",
+        "highlights": [
+            {
+                "height": 3.5740660833333324,
+                "width": 81.14115447736626,
+                "left": 9.42962962962963,
+                "top": 87.79721841666667
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 52,
+        "paragraphs": "pane? Sometimes I end up just deleting the comment b/c I want to clean it up before I send it for finalreview from a key, leadership stakeholder.\u201d (p-2-9), and others, short\u2014\u201capp service blog\u201d (p-2-26). Bothtypes of queries can cause challenges for AI systems to interpret user intents [32].",
+        "pageIndex": 11,
+        "start": "04:28",
+        "end": "04:50",
+        "highlights": [
+            {
+                "height": 4.986801444444448,
+                "width": 81.13998461810701,
+                "left": 9.42962962962963,
+                "top": 11.801571583333327
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 53,
+        "paragraphs": "Among the questions that we categorized as Workflow & Operation Help, some were posed inthe format of help queries and others were commands or direct requests from the assistant. Thehelp queries were either about general procedures\u2014\u201cHow to create a table?\u201d (p-1-39) or specific tothe user\u2019s context\u2014\u201cWhy is there the warning \"Upload blocked\" as I already have a copy in my localstorage?\u201d (p-1-11). The command type submissions were more common in the Phase 1 study in whichparticipants were free to imagine an assistant that could help with any of their document-relatedtasks. In the Phase 2 study however, because the system afforded help with document consumptionand not manipulation, participants rarely submitted commands. The majority of the commandsthat the users submitted requested features that were not implemented in Word\u2014\u201cFind all the pinkwords and review for modifications\u201d (p-1-8).",
+        "pageIndex": 11,
+        "start": "04:28",
+        "end": "04:50",
+        "highlights": [
+            {
+                "height": 16.857538305555565,
+                "width": 81.14170889827159,
+                "left": 9.42962962962963,
+                "top": 16.53666286111111
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 54,
+        "paragraphs": "A number of the questions that we categorized as seeking External Information were tied to thecontent of the document\u2014 \u201cLove for the tool to find market research data regarding the topic. Bothin our own data and from known trusted research companies online.\u201d (p-1-52). The reason for thiscategorization however, was that the information that they sought resided outside the document.Some of the categories that emerged from the questions submitted by our participants haveparallels in the taxonomy developed by Ter Hoeve et al [55]. For example, the questions that theyclassify as factoids appear to be questions seeking external information but only on public resources.The questions that they categorize as mechanical, copy-editing, or navigational were commands orrequests related to the operation of Word in our study. The rest of document-related questions thatthey obtained we categorize as questions related to the content. Their taxonomy however, did notcontain questions of other types present in our study, for instance those related to style or seekingexternal information from collaborators. One reason for this could be because question generatorsin their study did not in fact work on the documents but rather assumed familiarity with them.Another could be that those documents were in final published form and not in development. Yetanother reason could be the context of their study which emphasized AI-based assistance while weexplained to our users that the AI would be complemented by human intelligence.",
+        "pageIndex": 11,
+        "start": "04:28",
+        "end": "05:59",
+        "highlights": [
+            {
+                "height": 26.81893238888889,
+                "width": 81.52762723539094,
+                "left": 9.357818930041152,
+                "top": 33.14096841666667
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 55,
+        "paragraphs": "4.2 AI Success RateAlthough the AI model was invoked for every content related question in Phase 2, success waslimited to three factual questions, representing 25% of the factual questions, 7.3% of the contentquestions, and 2.3% of all questions in this phase. Of these answers, two were relayed just as themodel produced them and one was modified by the human workers to contain more information.In the other cases, it did not provide an answer at all or the answer was considered not relevant byour workers.",
+        "pageIndex": 11,
+        "start": "05:29",
+        "end": "05:36",
+        "highlights": [
+            {
+                "height": 12.161359916666669,
+                "width": 81.52876903954733,
+                "left": 9.357818930041152,
+                "top": 61.08201311111111
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 56,
+        "paragraphs": "4.3 Difference in the Distribution of Questions by User RoleTo gain insight into whether the distribution of questions differs by the user\u2019s role in the document,we investigated responses and contextual information collected by the add-ins. In the ExperienceSampler questionnaire of Phase 1, we directly asked about the user\u2019s primary role in the document.We also collected metadata about the users\u2019 activities. Specifically, if the user was the creator,we assigned them the role author. If the user had not created the document but had edited orcommented on it, we assigned them the reviewer role. If the user had done neither, we labeled thema reader.",
+        "pageIndex": 11,
+        "start": "05:29",
+        "end": "05:36",
+        "highlights": [
+            {
+                "height": 13.82316027777778,
+                "width": 81.55400645185179,
+                "left": 9.331275720164609,
+                "top": 74.36562422222222
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 57,
+        "paragraphs": "Table 1. Taxonomy of the types of questions with which users need support when working with businessdocuments.",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 79.967915333333337,
+                "width": 81.18997712592588,
+                "left": 9.358024691358024,
+                "top": 11.284167999999994
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 58,
+        "paragraphs": "Questions about one ormore of the following: ac-tions (e.g., edits or com-ments), time of actions, ac-tors, and document\u2019s prop-erties (e.g., word count)Questions about how toor commands to performa specific task inMicrosoft Word or theQ&A add-in",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 16.941745111111114,
+                "width": 19.560334435555557,
+                "left": 20.291769547325103,
+                "top": 17.636473111111115
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 59,
+        "paragraphs": "Questions about the or-ganization, syntax, or se-mantics of the text or thelanguage of the document",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 6.287300666666667,
+                "width": 19.559814162962965,
+                "left": 20.291769547325103,
+                "top": 61.77647311111111
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 60,
+        "paragraphs": "Command(N=7)Factual: A question the an-swer to which can be retrievedas a passage from the docu-ment (N=19)Reasoning: A question an-swering which requires com-plex reasoning and/or use ofexternal information (N=25)Overview: Refers to the doc-ument as a whole\u2014includingdocument type, topic, impactof the document, etc. (N=9)Summary: A special case ofoverview questions, seeks thesummary of the document or asection of the document (N=3)\u2014",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 29.07095022222222,
+                "width": 22.531224032921813,
+                "left": 41.61604938271604,
+                "top": 34.426573555555564
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 61,
+        "paragraphs": "Questions about the docu-ment\u2019s current formatting,layout, typography, etc.Questions seekinginformation that isexternal to the document.This information could beavailable:",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 12.375495111111109,
+                "width": 19.61474884609054,
+                "left": 20.23641975308642,
+                "top": 72.43105644444445
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 62,
+        "paragraphs": "Examples\u201cWas this file\u2019s location moved inthe last 6 months?\u201d (p-2-6)\u201cWhen was the last time this infowas updated?\u201d (p-2-25)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 7.818584444444445,
+                "width": 24.19133882600823,
+                "left": 65.690329218107,
+                "top": 16.106434666666672
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 63,
+        "paragraphs": "\u201cHow can I tell if an embeddedExcel table is current and coulda reviewer view the data source?\u201d(p-1-42)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 6.066737777777773,
+                "width": 24.165190646255148,
+                "left": 65.8545267489712,
+                "top": 26.990642444444447
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 64,
+        "paragraphs": "\u201cShow me my unresolved com-ments.\u201d (p-1-47)\u201cHow much morale money did ev-eryone get in June?\u201d (p-2-32)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 6.0668766666666585,
+                "width": 24.09880509629629,
+                "left": 65.96707818930042,
+                "top": 34.60092022222223
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 65,
+        "paragraphs": "\u201cAre there any action items in thisdocument?\u201d (p-2-14)\u201cHow many different databases arementioned\u201d? (p-1-4)\u201cWhat is the focus of this docu-ment?\u201d (p-2-35)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 9.11090444444444,
+                "width": 24.462774518518515,
+                "left": 65.690329218107,
+                "top": 43.73342022222222
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 66,
+        "paragraphs": "\u201cAre there any statements in thisdocument that could be unclear tothe reader, or are not inclusive innature?\u201d (p-1-8)\u201cDoes this document contain un-necessarily wordy paragraphs?\u201d(p-1-50)\u201cWhy are there weird spaces inmy document?\u201d (p-1-1)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 13.677293333333331,
+                "width": 24.375435140740738,
+                "left": 65.690329218107,
+                "top": 61.99814244444445
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 67,
+        "paragraphs": "\u201cWhat is executive bias?\u201d (p-2-32)[Asked in the context of a docu-ment that mentioned executivebias but did not define it.]\u201cWhere can I find a template ofa communication planning docu-ment?\u201d (p-1-42)",
+        "pageIndex": 12,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 10.633126666666668,
+                "width": 24.226271881481484,
+                "left": 65.96707818930042,
+                "top": 77.21883688888889
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 68,
+        "paragraphs": "\u201cWhat are some general topicsthat are covered when buildinga training agenda for a specificprogram?\u201d (p-1-54)\u201cCan word check a date and timeagainst my outlook calendar forconflicts?\u201d (p-1-18)\u201cHow old is my son?\u201d (p-2-26)\u201cI do not have any questions atthis time.\u201d (p-1-10)",
+        "pageIndex": 13,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 15.199237777777768,
+                "width": 23.914385066666668,
+                "left": 65.96707818930042,
+                "top": 19.283420222222237
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 69,
+        "paragraphs": "Users specifying they didnot have a question atthe time of submittingthe Experience Sampleror the Q&A form. Thesesubmissions were morecommon in the Phase 1study where we askedusers about their ques-tions at random points intime.Questions that may beeither content-related orseek external info but thatwe did not have access tothe content of the docu-ment to tease them apart",
+        "pageIndex": 13,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 46.074106222222227,
+                "width": 19.62812692016461,
+                "left": 9.358024691358024,
+                "top": 13.238278666666677
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 70,
+        "paragraphs": "In most cases in Phase 1, there was good (71%) agreement between self-reported and metadata-assigned roles. In cases of disagreement, we found that some users who had edited the documenthad labeled themselves as readers, while others labeled themselves as reviewers \u2013 likely signalingtheir perceived degree of contribution.",
+        "pageIndex": 13,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 6.893654611111112,
+                "width": 81.48706168913579,
+                "left": 9.42962962962963,
+                "top": 59.61971841666666
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 71,
+        "paragraphs": "Given the high degree of agreement in Phase 1, we opted to drop the role question from Phase 2of the study, instead relying exclusively on metadata. This kept the UI streamlined around askingand answering questions efficiently, yielding an experience resembling what a user would expectto see if such a system were deployed in the wild.",
+        "pageIndex": 13,
+        "start": "05:37",
+        "end": "06:04",
+        "highlights": [
+            {
+                "height": 6.893515722222222,
+                "width": 81.1415234625514,
+                "left": 9.42962962962963,
+                "top": 66.26152397222222
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 72,
+        "paragraphs": "Analyzing data from Phase 1 and Phase 2 together, we performed a Chi-squared test of inde-pendence on the contingency table of question categories and users\u2019 metadata-assigned roles. Weexcluded queries of the type No Question or Unknown from the data. The test revealed that thedistribution of questions is in fact not independent of the user\u2019s role (\ud835\udf122(10) = 37.78, \ud835\udc5d < 0.001).Figure 4 displays how the distributions of questions across categories vary by the user\u2019s role.Because the numbers of questions asked by authors, reviewers, and readers of documents aredifferent (\ud835\udc41Author = 118, \ud835\udc41Reviewer = 66, \ud835\udc41Reader = 56), the bar for each question category andeach role is normalized by the number of all questions asked by users with a similar role. Thefigure suggests that the questions that authors ask are more often concerned with performingspecific operations in Word\u2014\u201cHow to save as pdf without showing the comments?\u201d (p-1-11) or findinginformation external to the document\u2014\u201cHow would one approach a point of view paper?\u201d (p-1-7),",
+        "pageIndex": 13,
+        "start": "06:20",
+        "end": "06:35",
+        "highlights": [
+            {
+                "height": 18.518093861111115,
+                "width": 81.48808254814811,
+                "left": 9.42962962962963,
+                "top": 72.90319063888889
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 73,
+        "paragraphs": "Fig. 4. Distributions of question types by the role of the user in the document. Each bar shows the ratio ofthe question type relative to all questions asked by users with similar role.",
+        "pageIndex": 14,
+        "start": "06:20",
+        "end": "06:35",
+        "highlights": [
+            {
+                "height": 2.967915333333337,
+                "width": 81.14047374222221,
+                "left": 9.42962962962963,
+                "top": 36.206668
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 74,
+        "paragraphs": "both of which help with authoring tasks. Interestingly, readers also ask more questions aboutexternal information rather than the content of the document, although it is potentially the contentof the document that gives rise to such questions\u2014\u201cWho\u2019s the competition?\u201d (p-1-41). Reviewershowever, are more concerned with the document\u2019s content\u2014\u201c...What action [is] needed from me?\u201d(p-1-35) or its metadata\u2014\u201cWhere is the last change?\u201d (p-2-10), with both types of questions helpingthe reviewer find the information that is relevant to them. As expected, readers are not concernedwith the visual style of the document as often as authors or reviewers, although the datapoints inthis question category may not be enough for generalization.",
+        "pageIndex": 14,
+        "start": "06:20",
+        "end": "06:35",
+        "highlights": [
+            {
+                "height": 13.535321277777784,
+                "width": 81.42020685201648,
+                "left": 9.304526748971194,
+                "top": 43.87402397222221
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 75,
+        "paragraphs": "4.4 Skillsets and Roles of Human RespondentsMany of the submitted queries required a level of understanding, analysis, or need of a knowledgebase that would be challenging for even state-of-the-art ML systems. To answer these queriestherefore, a document Q&A assistant would need to employ human intelligence. In our study, thetype of human respondents that were needed to answer participants\u2019 questions included the authoror document collaborators\u2014\u201cWhen is this slated for release?\u201d (p-2-16), experts in various domains\u2014\u201cDoes [cloud service product] use my [OAuth provider] account?\u201d (p-1-6), and human workers witha more general skill set\u2014\u201cCan the assistant make recommendations to other ways to phrase myquestions?\u201d (p-1-12).",
+        "pageIndex": 14,
+        "start": "06:35",
+        "end": "06:44",
+        "highlights": [
+            {
+                "height": 15.483576944444437,
+                "width": 81.67517752958848,
+                "left": 9.122222222222224,
+                "top": 59.12492977777778
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 76,
+        "paragraphs": "The types of questions that needed human intelligence were not limited to those that askedfor external information or an opinion, but also included those that referred to the content of adocument but required domain expertise to answer, for instance, in the domain of finance, legal,marketing, or software engineering. The desire for connecting with colleagues familiar with thedocument or domain experts within the company explicitly surfaced in Phase 1, where participantshad also indicated who could answer their question. We present a sampling of questions, andsuggested human respondents below:",
+        "pageIndex": 14,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 11.874904611111113,
+                "width": 81.36536596740741,
+                "left": 9.10962962962963,
+                "top": 74.35527397222222
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 77,
+        "paragraphs": "\u201cWhat information is missing? Do the readers understand the content and what questions do theyhave?\u201d\u2014suggested respondent: \u201cPeople who have written similar documents or documents on this topic\u201d(p-1-27)",
+        "pageIndex": 14,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 4.9881851388888885,
+                "width": 81.42004187572012,
+                "left": 9.304526748971194,
+                "top": 86.22476602777778
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 78,
+        "paragraphs": "The end-of-study survey responses also indicated the need for domain experts in such Q&Asystems where the most cited question type for which participants stated they had received anunhelpful answer was one needing domain expertise. When the knowledge workers of our studyreceived a question answering which required expertise they did not possess, they marked thequestion as unanswerable, explaining the reason.",
+        "pageIndex": 15,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 8.554071277777792,
+                "width": 81.2120816296296,
+                "left": 9.42962962962963,
+                "top": 14.87610730555555
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 79,
+        "paragraphs": "4.5 Users\u2019 Experience with the Q&A SystemOverall, users were fairly satisfied with the answers they received from the Q&A system (\ud835\udf07 = 3.45,\ud835\udf0e = 0.98). Only 4 out of the 31 end-of-study survey respondents rated the answers unsatisfactory(rating of 1 or 2). We explored participants\u2019 free-text responses to understand what they liked ordisliked about the system. Participants saw value in the tool helping them be more efficient attheir task \u2014\u201cIt helped me by providing answers quickly, I could have probably checked myself some ofthem by going through previous versions of the documents etc., but this was more efficient.\u201d (p-2-29)or find solutions or workflows appropriate for their particular context (N=3)\u2014\u201cI was able to askquestions about a few different capabilities that I was unfamiliar with before, which was nice.\u201d (p-2-9).A number of participants (N=4) stated that they would have liked to know about possible usecases of the tool\u2014\u201cI think it would be helpful if the system could present some sample questions sothe user could know what type of answers the system could provide.\u201d (p-2-14). We had deliberatelywithheld examples of usage from users because we did not want to prime users to ask questionsof a particular type. Some participants asked for a faster response time\u2014\u201cMore expedient answers\u201d(p-2-5). Others (N=2) had concerns about privacy\u2014\u201cbe able to search some properties of a documentwithout full access\u201d (p-2-38).",
+        "pageIndex": 15,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 27.106632499999996,
+                "width": 81.58145996296297,
+                "left": 9.304526748971194,
+                "top": 24.55242977777777
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 80,
+        "paragraphs": "We performed an exploratory analysis to understand if the delay in responses had affecteduser\u2019s satisfaction with the tool. We developed three linear models with satisfaction rating as thedependent variable and a measurement of response times a participant had experienced (mean,minimum, and maximum) as the independent variable. We did not observe a significant effect of timeon satisfaction ratings (\ud835\udefd = 0.000, \ud835\udc5d = 0.64 for mean; \ud835\udefd = 0.000, \ud835\udc5d = 0.57 for min; \ud835\udefd = 0.000, \ud835\udc5d = 0.83for maximum). When examining participants\u2019 responses, we found that, interestingly, what isperceived as a long delay differs across participants. In response to how quickly the answer totheir question arrived, one participant said \u201cQuickly, I think within a couple hours.\u201d, while anotherwished for a faster response time\u2014\u201cThere was a delay in the email sent to me. Took about 5 minutes\u201d.This variance in how long a delay is acceptable may be due to the difference in question types andtheir complexity. We examine the relationship between question types and their expected responsetimes in the next section.",
+        "pageIndex": 15,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 20.17712683333333,
+                "width": 81.53208571193417,
+                "left": 9.353909465020577,
+                "top": 51.405829527777776
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 81,
+        "paragraphs": "4.6 How Response Time Varies by Question TypeTo further examine what types of questions a document Q&A system could be most valuable for,we explored how the type of questions affects the time it takes users to answer them. To do so, weprobed the data from the Experience Sampling phase in which participants submitted their estimateof the time it would take them to answer their query along with the query itself. We excluded thequeries of the type No Question or Unknown, leaving 115 queries for analysis. Figure 5 shows thedistribution of self-reported response times across question categories. The figure shows that mostcontent-related questions can be answered by the participant in a relatively short time (less than 20minutes). Interestingly, the questions that participants indicated would take them hours to answeror that they could not answer at all were related to External Information or Workflow & OperationHelp.",
+        "pageIndex": 15,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 18.80302658333333,
+                "width": 81.44127832041148,
+                "left": 9.353909465020577,
+                "top": 72.70520755555555
+            }
+        ]
+    },
+    {
+        "section_id": 6,
+        "id": 82,
+        "paragraphs": "Fig. 5. Distributions of self-reported response time by the type of questions. Each bar shows the number ofthe questions in the specified category that could be answered within the indicated response time.",
+        "pageIndex": 16,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 2.967915333333337,
+                "width": 81.14034090666665,
+                "left": 9.42962962962963,
+                "top": 43.848890222222224
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 83,
+        "paragraphs": "5 DiscussionThe results of our studies contribute empirical understanding of users\u2019 information needs whenworking with their documents. Understanding the types of assistance that users require is a steppingstone for designing systems that can provide that assistance.",
+        "pageIndex": 16,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 7.179971027777772,
+                "width": 81.2172264161317,
+                "left": 9.353909465020577,
+                "top": 49.407846444444445
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 84,
+        "paragraphs": "The human-in-the-loop document Q&A prototype in our study was a first attempt at the kindof document digital assistance that we envision. It served as a technology probe to understandthe needs of users in a real-world setting, examine the feasibility of generating answers with theaid of AI and other humans, and understand the design requirements of such a technology [24].Using a document Q&A prototype and collecting questions in-situ as users were working on theirdocuments naturally and when they had questions, enhanced the ecological validity of our studywith respect to both the nature of questions asked and the frequency with which such a toolwould be used. While this data collection method did not result in a large number of questionsper participant, it yielded a sample that represented actual questions in the wild. Indeed, beforethe onset of the study, some participants told us that they anticipated accessing only a few Worddocuments during the study period.",
+        "pageIndex": 16,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 18.51657127777778,
+                "width": 81.53214542222224,
+                "left": 9.353909465020577,
+                "top": 56.33610730555555
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 85,
+        "paragraphs": "In the context of our study, because human operators had access to the entirety of the documentsthrough the share links that users provided, in asking questions, users were not bound to thecapabilities of current digital assistants. This versatility allowed users to receive help with thedocuments they worked on and us to collect a variety of questions before attempting to develop adocument Q&A system which may not align with users\u2019 actual needs.",
+        "pageIndex": 16,
+        "start": "06:35",
+        "end": "06:52",
+        "highlights": [
+            {
+                "height": 8.554071277777778,
+                "width": 81.14115447736626,
+                "left": 9.42962962962963,
+                "top": 74.60082952777778
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 86,
+        "paragraphs": "5.1 Question TypesOne surprising finding of our study was that despite the significant investment in research onextractive question answering (used for factual questions) [43, 49], many questions are in fact notlimited to the content of the document. Moreover, the majority of the content-related questions",
+        "pageIndex": 16,
+        "start": "06:54",
+        "end": "07:57",
+        "highlights": [
+            {
+                "height": 7.1799710277777775,
+                "width": 81.14008821234565,
+                "left": 9.42962962962963,
+                "top": 84.31117977777778
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 87,
+        "paragraphs": "that the participants asked could not be answered by returning an excerpt from the document. Theshortcomings of existing question answering models could be partly attributed to the datasets theyuse for training which consist of questions and answers generated by crowd workers or searchqueries on documents on the web. These queries have been on finalized public documents authoredby someone other than the query generator and on which query generators have had little priorknowledge. Therefore, most queries obtained in this corpus lack the diversity of attributes that caninfluence the type of content-related questions.",
+        "pageIndex": 17,
+        "start": "06:54",
+        "end": "07:57",
+        "highlights": [
+            {
+                "height": 11.874904611111122,
+                "width": 81.19449302798351,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 88,
+        "paragraphs": "One such attribute is the stage or state of the document at the time the question is asked. Forinstance, questions about style or metadata are not often asked on an already published document.Another such attribute is the role of the user asking the question, which can potentially affectthe type of content-related questions they ask, similar to how user\u2019s role affects their overall typesof questions, discussed in Section 4.3. For instance, in the cases where the user is an author ofthe document, they already have enough familiarity with the document and the context of theinformation they seek to look for it using navigation or the \u201cfind\u201d tool instead of submitting theirquery to our system which would take longer to respond. As one participant said: \u201c[M]ost of thequestions I had could either be found directly in the doc with a quick Ctrl+F or, for metadata, justlooking in file Properties dialog box (right click on file)...\u201d (p-2-25). In the cases where the user isreading a document they have not authored, their content-related questions may more often involvean overview or finding an answer to a specific question that requires some degree of reasoning.In cases where factual questions were asked, the end-of-study survey responses suggest that theparticipant may have been posing questions to familiarize themselves with the system: \u201cEven beforeasking questions that\u2019d be actually useful, I began by asking questions that test its ability.\u201d (p-2-37).Our finding that even state-of-the-art Q&A models fall short of their promise to answer factualquestions in the domain of business documents does not suggest that a digital assistant willbe unhelpful and that we should abandon efforts to build such an assistant in this domain. Onthe contrary, it points to directions that researchers and designers of these tools can pursue toovercome the challenges of this domain. One is that such tools, at least for the present, need toemploy a combination of automation and human intelligence. The questions, documents, andhuman generated responses of a hybrid Q&A system can serve as ecologically valid training datafor building future Q&A models. With our results showing that the effectiveness of such modelsdiffers drastically across hypothetical data and data collected in-situ, we call on future work to payspecial attention to the process of collecting training data.",
+        "pageIndex": 17,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 41.762821277777775,
+                "width": 81.45581653580247,
+                "left": 9.42962962962963,
+                "top": 23.178329527777777
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 89,
+        "paragraphs": "5.2 Opportunities and Challenges of Incorporating Humans in the LoopAnother insight from the range of the questions we received was that a number of them requiredhuman assistance from the document\u2019s authors, domains experts, or workers with more general skillsets. A document assistant would therefore need to classify and route questions to the appropriaterespondents. This component of the system would be akin to IM-an-Expert, a social Q&A systemwhich located and contacted potential respondents with expertise or interest in a subject matter[51, 60]. While questions submitted to a human-in-the-loop document Q&A tool may experiencedelays, the delay could be justified if the tool enables users to be more efficient or help themaccomplish tasks that they could not otherwise perform. Indeed, in Section 4.6, we observed thatthere are certain types of questions such as those seeking information external to the document orworkflow and operation help which would take participants hours to answer or that they wouldnot be able to answer at all. These questions are of the type that could be routed to and handled byother human respondents.",
+        "pageIndex": 17,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 22.123998805555555,
+                "width": 81.27021319259254,
+                "left": 9.353909465020577,
+                "top": 66.063402
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 90,
+        "paragraphs": "In addition, the delays in responses returned from our Q&A system were most often due tohuman availability as opposed to the time it took to complete the task once a human was engaged.",
+        "pageIndex": 17,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 3.572682388888888,
+                "width": 81.4571407826337,
+                "left": 9.42962962962963,
+                "top": 87.93555175
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 91,
+        "paragraphs": "In a system where a human is always available we may see a significant decrease in response time.Furthermore, the long-term vision for nearly all the question types is to be accommodated usingautomated assistance, enabled by collecting in-situ training data from human-in-the-loop Q&Asystems, which will most likely yield even faster response times.",
+        "pageIndex": 18,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 6.8936546111111205,
+                "width": 81.45529380679008,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 92,
+        "paragraphs": "Many questions were beyond the capabilities of the document Q&A model used in this study.Although human respondents are necessary for some of these questions, others have great potentialfor automation, if only the model could consult other resources. For instance, for answering thequestions seeking external information available on public resources, and for some questionsabout the operation of Word, a Q&A system could make use of the research in informationretrieval and search. Questions seeking information within the company\u2019s documents could usethe same approach while also leveraging enterprise knowledge bases, together with rich contextualinformation such as the role or expertise of candidate documents\u2019 authors, their organizationaldistance from the user asking the question, or the authors\u2019 ownership of similar documents inaddition to the content of the documents. Finally, questions on metadata could be answered bymapping the questions to the correct application interface (API) calls to retrieve the necessaryinformation [52]. We have summarized several pathways for automating the handling of differentquestion types in the business document domain in Table 2.",
+        "pageIndex": 18,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 21.8375435,
+                "width": 81.52796782954732,
+                "left": 9.357818930041152,
+                "top": 18.19707952777777
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 93,
+        "paragraphs": "While many document-centric requests can be automated and therefore accomplished withoutthe user having to share their content with someone who does not otherwise have access toit, there still exist information needs that cannot be satisfied by pure automation. Because theknowledge workers in this study were the researchers on the project and employees of the samecompany as the users, most users agreed to sharing the content of their document with the workers.However, privacy may be a challenge in cases where users work with confidential documents orif workers are recruited from outside the company. This issue was addressed in a similar hybridsystem, Calendar.help [10], by having human workers signing a non-disclosure agreement and bydesigning microtasks that include only the information needed to complete the scheduling task.Future work can investigate other approaches to maintaining confidentiality of documents and theuser\u2019s privacy for instance, by chunking the document into different segments and assigning eachto a different knowledge worker in a manner similar to the context-free microtasks explored in[25]. In fact, research has examined how to withhold personally identifiable information in imagesfrom crowdworkers by showing only small segments and iteratively zooming out to identify visualinformation and by leveraging workers\u2019 prediction of adjacent segments that are not displayed[31, 36]. In the context of documents, some tasks such as stating the impact of a document orcritiquing its overall language style may require a holistic view. However, it is conceivable thatteams of knowledge workers could dynamically be organized similar to flash teams in [50, 58],where outputs or summaries provided by some teams are given as inputs to others, eliminating theneed for any one worker to have access to the specifics of the document.",
+        "pageIndex": 18,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 33.46059905555556,
+                "width": 81.53250426156376,
+                "left": 9.353909465020577,
+                "top": 39.782773972222216
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 94,
+        "paragraphs": "5.3 Opportunities for Human-in-the-loop Document ManipulationOur study was a technology probe to understand how current document Q&A models can beleveraged to help with consumption of business documents, how well these models deliver theirpromise, and to gain insight into opportunities of employing human intelligence to fill in thegaps of current technology. Therefore, the prompts that we presented to the participants in bothphases nudged them to ask questions that would help them with consuming the document oraccomplishing a particular task, rather than delegating a task to the assistant. While we receivedsome questions in the form of commands directed to the assistant in the Phase 1 study, the majorityof questions were not task-oriented commands as studying document manipulation in this domainwas outside the scope of our work and would require a study design targeted for this context. One",
+        "pageIndex": 18,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 17.142609916666668,
+                "width": 81.27021319259258,
+                "left": 9.353909465020577,
+                "top": 74.36562422222222
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 95,
+        "paragraphs": "Table 2. Opportunities for automating the handling of different types of questions in the business documentdomain.",
+        "pageIndex": 19,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 2.967915333333321,
+                "width": 81.19099553185185,
+                "left": 9.379835390946502,
+                "top": 11.381112444444454
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 96,
+        "paragraphs": "Opportunities for AutomationBuilding natural language interfaces to APIs [52] that handle metadataRe-purposing search engines or information retrieval approaches for this domain [7], routingquestions to human respondents skilled in Microsoft Word to answer help queries (similarto social Q&A tools such as [9] for web applications), using an embedded tool powered bythe crowd to accommodate commands (similar to the Human Macro feature in Soylent [4])Using classifiers to triage the type of external information sought, leveraging research ininformation retrieval and extractive Q&A for handling factual questions and documentsummarization for summary type questions [55, 64], using a social Q&A system to locate andcontact human respondents with appropriate skillsets for answering overview or reasoningtype questionsUsing a social Q&A system to contact human respondents with appropriate or specificskillsets, using an embedded tool powered by the crowd for accommodating proofreadingrequests (similar to the Proofread feature in Soylent [4]), retrieving answers to generalsyntactic questions in knowledge bases such as english.stackexchange.comBuilding natural language interfaces similar to those targeted for GUIs [56], using a socialQ&A system to contact human respondents with appropriate skillsetsUsing classifiers to triage the type of external information sought to determine the corpusof search, leveraging information retrieval techniques within the corpus, routing questionsto the appropriate human respondents similar to IM-an-Expert [51, 60], enhancing the Q&Asocial system using enterprise knowledge bases enriched with contextual information suchas employee roles, expertise, inquirer\u2019s and potential respondent\u2019s organizational distancefrom each other, and history of potential respondents working on similar documents as oneon which a question is asked",
+        "pageIndex": 19,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 34.04967752777778,
+                "width": 60.133008639094655,
+                "left": 28.90205761316872,
+                "top": 16.660604875000004
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 97,
+        "paragraphs": "difference between the context of accommodating queries in consumption vs manipulation is that inconsumption, the question and the answer can be private to the user, whereas when manipulatinga document, the change will be visible to all the users who have access to the document. Onequestion that arises in this context is whether the changes should appear to have been made bythe user who made the request or by the AI. This design decision would likely impact the typesof tasks with which users will ask for help. The types of requested tasks will also likely differ bywhether the document is shared with others.",
+        "pageIndex": 19,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 11.874904611111118,
+                "width": 81.27017219423863,
+                "left": 9.353909465020577,
+                "top": 53.06707952777776
+            }
+        ]
+    },
+    {
+        "section_id": 7,
+        "id": 98,
+        "paragraphs": "A challenge of accommodating manipulation in the domain of business documents is that thetasks, at least for the present, will likely need to be completed solely by human workers, as the scopeof automation in this domain is very limited. Prior work has already investigated crowdsourcedtools to help with modifying general documents [4]. Future work should conduct a need-findingstudy to investigate whether in the business domain, users are willing to outsource modificationsto their documents to others who may not have the required background knowledge or domainexpertise, or may simply not know the context of the project. A need-finding study should alsoexamine whether using such a system can impact the collaborators\u2019 perception of the quality of thecompleted task or the user who requested the task. We have added these points to the Discussionas areas that future work can investigate.",
+        "pageIndex": 19,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 16.856154611111112,
+                "width": 81.14167484864193,
+                "left": 9.42962962962963,
+                "top": 64.69013508333333
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 99,
+        "paragraphs": "6 Limitations and Future WorkIn this work we focused only on Word documents as a common document type where users canauthor, copy-edit, or read content. Indeed, the organization where we deployed our studies primarilyuses Word for business documents. The focus on Word rather than e.g., PDFs or web pages alsoallowed us to obtain questions about documents at various stages of development, not just finalized",
+        "pageIndex": 19,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 8.840387694444443,
+                "width": 81.1944930279835,
+                "left": 9.42962962962963,
+                "top": 82.66784644444445
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 100,
+        "paragraphs": "manuscripts. Future work can investigate the types of questions that arise when users interact withother file types such as PDF, Excel, and PowerPoint. Because each file type is used for differentpurposes (e.g., Excel documents for long-term book-keeping [27]) and possibly containing contentat different levels of abstraction, the extent to which question answering in these documents canbe automated and the kinds of expertise knowledge workers need may be different from the Worddocuments in our study.",
+        "pageIndex": 20,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 10.214487944444464,
+                "width": 81.14034240213994,
+                "left": 9.42962962962963,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 101,
+        "paragraphs": "Because all questions had to first pass through the knowledge workers\u2019 system, the majorityof the responses that participants received from the Q&A system had a delay. Therefore, it ispossible that participants would have asked different questions if the responses had been providedinstantaneously. Another property that could have conceivably impacted the types of questionsusers asked is the quality of the answers that they received. To understand if the types of questionsby a user changed over time as they gained familiarity with the system, we examined the questionsthat were posted by the same user both across different documents or on the same document. Weobserved that some users posted multiple questions in succession and close together in time, e.g.,in the span of a few minutes. Although these users would realize that the system does not provideanswers instantaneously, their cluster of initial questions would not be impacted by the expectationof a long delay, their perceived capabilities of the system, or the quality of the answers. In fact,although we had specified in the consent form that there may be a delay in the responses thatparticipants would receive from the Q&A system, some end-of-study survey responses indicatedthat a number of participants had in fact not noticed this point and had asked their first fewquestions expecting instantaneous answers\u2014\u201cI was initially confused by the delay of asking thequestion in the document and then waiting for an email that told me to go back to the document. Itseemed a bit redundant to get an email about it vs. just a notification in the Word doc itself and tellingme it was working on it or something. For a plug-in, however, I would expect less of a delay.\u201d (p-2-18).Therefore, the first few questions from these participants could help with the generalizability ofour results.",
+        "pageIndex": 20,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 33.46059905555556,
+                "width": 81.51794170452675,
+                "left": 9.368106995884776,
+                "top": 21.517912861111117
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 102,
+        "paragraphs": "The delay or the quality of answers however, may have influenced those users who submittedquestions after receiving answers from the system. Upon examination, we found that in manyinstances, when users received answers to their previous questions, they explored increasingly moresophisticated questions of various types, e.g., content-related, concerning metadata, or seekingexternal information. For instance, one participant started by asking simple metadata questions(\u201cwho is the author?\u201d) and proceeded to ask questions on a scanned document that needed not onlycomplex reasoning, but also optical character recognition (OCR): \u201cwhat is the total score?\u201d on adocument where handwritten scores were given to each question. This finding suggests that theanswers may have in fact encouraged users to be liberal with the types of questions they wished tosubsequently ask. This exploration could be due to users gaining confidence that the system can infact handle the types of questions with which they need support or could be because they wishedto test the limits of its abilities.",
+        "pageIndex": 20,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 20.177126833333336,
+                "width": 81.25597466337449,
+                "left": 9.368106995884776,
+                "top": 54.72666286111111
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 103,
+        "paragraphs": "Nevertheless, the characterization that we present in the paper also includes the questions userssubmitted in the Experience Sampling phase, where participants could imagine a sophisticatedsystem with any or no delay. The set of questions in that phase of the study could further helpwith generalizability of our results, e.g., to settings where not all questions necessarily experiencea delay.",
+        "pageIndex": 20,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 8.554071277777778,
+                "width": 81.21718212962962,
+                "left": 9.353909465020577,
+                "top": 74.65194063888889
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 104,
+        "paragraphs": "It is conceivable that the types of questions about a document may vary with the document type.In Phase 2 where we had access to the documents, we observed that the document distributionwas in fact very varied and included project proposals and timelines, value propositions, designspecifications, service instructions, management training, protocols, FAQs, whitepaper reports,strategy planning, customer feedback, research findings, etc. from various domains. With this",
+        "pageIndex": 20,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 8.554071277777778,
+                "width": 81.5322749786008,
+                "left": 9.353909465020577,
+                "top": 82.95416286111112
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 105,
+        "paragraphs": "diverse set of document types, investigating the relationship between types of questions and typesof documents would require collecting far more questions by running the study for a long time.The setup of our Q&A system was such that users submitted one-shot questions as there wereno affordances for following up on previously asked questions. Future work should investigatewhether the types of questions that users ask a document Q&A system differ if the system providesthe users with the means for following up on their previous questions or multi-round conversationswith the assistant.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 11.874904611111122,
+                "width": 81.21711243242798,
+                "left": 9.353909465020577,
+                "top": 11.55527397222221
+            }
+        ]
+    },
+    {
+        "section_id": 8,
+        "id": 106,
+        "paragraphs": "Another area for future work would be to explore the context of user needs including whenusers need different types of assistance with their documents, what they do before the seek help,and what they do after they receive answers. To minimize concerns about the confidentiality of thebusiness data, the contextual information that we collected in our study concerned the metadataof the document (e.g., file size, last modified date, etc.) and not the content. For the same reason,we did not track a user\u2019s modification of the document before or after the user posted a question;the metadata was collected upon the user\u2019s submission of a question. Therefore, given the datawe collected, we cannot examine the context of user needs. Future work can study this questionthrough interviews and user-produced logs.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 15.195876833333337,
+                "width": 81.44120092740737,
+                "left": 9.353909465020577,
+                "top": 23.178329527777777
+            }
+        ]
+    },
+    {
+        "section_id": 9,
+        "id": 107,
+        "paragraphs": "7 ConclusionWe studied users\u2019 information needs when working with their business documents as a first steptowards building document assistants that can handle a variety of user requests. To understandusers\u2019 actual needs, it was important to collect their document-centric questions in-situ. Therefore,we conducted two user studies. In the first study, we performed experience sampling of users\u2019questions via a Microsoft Word add-in as users were working with their documents. In the second,users submitted their questions via an add-in and received answers from a human-in-the-loopdocument Q&A system that complemented a question-answering AI with human intelligence. Wecharacterized the distributions of questions and observed that the types of questions do indeedvary by whether the user is an author, a reviewer, or a reader of the document. In addition, thequestions gave us insight into what types of request can be automated and whether particularskillsets or roles within the document are needed from human respondents in a document digitalassistant that is co-powered by artificial and human intelligence.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 22.123998805555555,
+                "width": 81.46482888234566,
+                "left": 9.331275720164609,
+                "top": 39.59354088888889
+            }
+        ]
+    },
+    {
+        "id": 108,
+        "paragraphs": "References[1] [n.d.]. Create professional slide layouts with PowerPoint Designer. https://support.microsoft.com/en-us/office/create-",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 3.552848472222219,
+                "width": 81.31473078728395,
+                "left": 9.42962962962963,
+                "top": 62.93687422222222
+            }
+        ]
+    },
+    {
+        "id": 109,
+        "paragraphs": "[2] Mark S Ackerman and Leysia Palen. 1996. The Zephyr Help Instance: promoting ongoing activity in a CSCW system.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666697,
+                "width": 80.6313662613169,
+                "left": 10.192181069958847,
+                "top": 67.72616043055555
+            }
+        ]
+    },
+    {
+        "id": 110,
+        "paragraphs": "[3] Qingyao Ai, Susan T Dumais, Nick Craswell, and Dan Liebling. 2017. Characterizing email search using large-scale",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 80.37778260637856,
+                "left": 10.192181069958847,
+                "top": 70.49352154166667
+            }
+        ]
+    },
+    {
+        "id": 111,
+        "paragraphs": "behavioral logs and surveys. In Proceedings of the 26th International Conference on World Wide Web. 1511\u20131520.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 74.01208967078189,
+                "left": 12.94238683127572,
+                "top": 71.87727154166666
+            }
+        ]
+    },
+    {
+        "id": 112,
+        "paragraphs": "[4] Michael S Bernstein, Greg Little, Robert C Miller, Bj\u00f6rn Hartmann, Mark S Ackerman, David R Karger, David Crowell,and Katrina Panovich. 2010. Soylent: a word processor with a crowd inside. In Proceedings of the 23nd annual ACMsymposium on User interface software and technology. 313\u2013322.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298423375000004,
+                "width": 80.55786422798349,
+                "left": 10.192181069958847,
+                "top": 73.26088265277778
+            }
+        ]
+    },
+    {
+        "id": 113,
+        "paragraphs": "[5] Jeremy Birnholtz and Steven Ibara. 2012. Tracking changes in collaborative writing: edits, visibility and group",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666697,
+                "width": 80.37858617613173,
+                "left": 10.192181069958847,
+                "top": 77.41199376388889
+            }
+        ]
+    },
+    {
+        "id": 114,
+        "paragraphs": "maintenance. In Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work. 809\u2013818.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 71.4488812345679,
+                "left": 12.94238683127572,
+                "top": 78.79574376388888
+            }
+        ]
+    },
+    {
+        "id": 115,
+        "paragraphs": "[6] Jeremy Birnholtz, Stephanie Steinhardt, and Antonella Pavese. 2013. Write here, write now! An experimental study ofgroup maintenance in collaborative writing. In Proceedings of the SIGCHI Conference on Human Factors in ComputingSystems. 961\u2013970.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111115,
+                "width": 80.37780502765433,
+                "left": 10.192181069958847,
+                "top": 80.17949376388889
+            }
+        ]
+    },
+    {
+        "id": 116,
+        "paragraphs": "[7] Horatiu Bota, Adam Fourney, Susan T Dumais, Tomasz L Religa, and Robert Rounthwaite. 2018. Characterizing SearchBehavior in Productivity Software. In Proceedings of the 2018 Conference on Human Information Interaction & Retrieval.160\u2013169.",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.29717752777778,
+                "width": 80.63063252921812,
+                "left": 10.192181069958847,
+                "top": 84.33060487499999
+            }
+        ]
+    },
+    {
+        "id": 117,
+        "paragraphs": "[8] Danqi Chen, Adam Fisch, Jason Weston, and Antoine Bordes. 2017. Reading wikipedia to answer open-domain",
+        "pageIndex": 21,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666697,
+                "width": 80.37858617613165,
+                "left": 10.192181069958847,
+                "top": 88.48157709722221
+            }
+        ]
+    },
+    {
+        "id": 118,
+        "paragraphs": "[9] Parmit K Chilana, Andrew J Ko, and Jacob O Wobbrock. 2012. LemonAid: selection-based crowdsourced contextualhelp for web applications. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. 1549\u20131558.[10] Justin Cranshaw, Emad Elwany, Todd Newman, Rafal Kocielnik, Bowen Yu, Sandeep Soni, Jaime Teevan, and Andr\u00e9sMonroy-Hern\u00e1ndez. 2017. Calendar. help: Designing a workflow-based scheduling agent with humans in the loop. InProceedings of the 2017 CHI Conference on Human Factors in Computing Systems. 2382\u20132393.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 7.065784486111113,
+                "width": 81.1407046727572,
+                "left": 9.42962962962963,
+                "top": 11.87324376388888
+            }
+        ]
+    },
+    {
+        "id": 119,
+        "paragraphs": "[11] Mark Dredze. 2009. Intelligent email: Aiding users with AI. University of Pennsylvania, Philadelphia, PA (2009).[12] Matthew Dunn, Levent Sagun, Mike Higgins, V Ugur Guney, Volkan Cirik, and Kyunghyun Cho. 2017. Searchqa: A",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 2.9135664166666846,
+                "width": 81.197297302572,
+                "left": 9.429629629629623,
+                "top": 18.7917159861111
+            }
+        ]
+    },
+    {
+        "id": 120,
+        "paragraphs": "new q&a dataset augmented with context from a search engine. arXiv preprint arXiv:1704.05179 (2017).",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 68.69156123456791,
+                "left": 12.94238683127572,
+                "top": 21.559215986111116
+            }
+        ]
+    },
+    {
+        "id": 121,
+        "paragraphs": "[13] Ethan Fast, Binbin Chen, Julia Mendelsohn, Jonathan Bassen, and Michael S Bernstein. 2018. Iris: A conversational",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14013397423864,
+                "left": 9.429629629629636,
+                "top": 22.94282709722222
+            }
+        ]
+    },
+    {
+        "id": 122,
+        "paragraphs": "agent for complex tasks. In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems. 1\u201312.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 75.55355417695475,
+                "left": 12.94238683127572,
+                "top": 24.326577097222213
+            }
+        ]
+    },
+    {
+        "id": 123,
+        "paragraphs": "[14] George Ferguson, James Allen, Lucian Galescu, Jill Quinn, and Mary Swift. 2009. Cardiac: An intelligent conversational",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14080962880657,
+                "left": 9.429629629629636,
+                "top": 25.71018820833332
+            }
+        ]
+    },
+    {
+        "id": 124,
+        "paragraphs": "[15] Ning Gao and Silviu Cucerzan. 2017. Entity linking to one thousand knowledge bases. In European Conference on",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 81.14024849917695,
+                "left": 9.429629629629623,
+                "top": 28.477688208333333
+            }
+        ]
+    },
+    {
+        "id": 125,
+        "paragraphs": "[16] Alexander Gelbukh, Grigori Sidorov, and Adolfo Guzman-Arenas. 1999. Document comparison with a weighted topichierarchy. In Proceedings. Tenth International Workshop on Database and Expert Systems Applications. DEXA 99. IEEE,566\u2013570.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.297177527777778,
+                "width": 81.32137754148148,
+                "left": 9.429629629629629,
+                "top": 31.245049319444448
+            }
+        ]
+    },
+    {
+        "id": 126,
+        "paragraphs": "[17] Catalina Hallett. 2008. Multi-modal presentation of medical histories. In Proceedings of the 13th international conference",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.1405322197531,
+                "left": 9.42962962962963,
+                "top": 35.396160430555554
+            }
+        ]
+    },
+    {
+        "id": 127,
+        "paragraphs": "[18] Catalina Hallett, Richard Power, and Donia Scott. 2006. Summarisation and visualisation of e-health data repositories.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666657,
+                "width": 81.39374714806584,
+                "left": 9.42962962962963,
+                "top": 38.16352154166667
+            }
+        ]
+    },
+    {
+        "id": 128,
+        "paragraphs": "[19] Shuguang Han, Xuanhui Wang, Mike Bendersky, and Marc Najork. 2020. Learning-to-Rank with BERT in TF-Ranking.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.39377010720162,
+                "left": 9.42962962962963,
+                "top": 40.931021541666674
+            }
+        ]
+    },
+    {
+        "id": 129,
+        "paragraphs": "[20] Jessi Hempel. 2015. Facebook launches M, its bold answer to Siri and Cortana. Wired. Retrieved January 1 (2015), 2017.[21] Damon Horowitz and Sepandar D Kamvar. 2010. The anatomy of a large-scale social search engine. In Proceedings of",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 2.914534486111104,
+                "width": 81.14056896790123,
+                "left": 9.429629629629629,
+                "top": 43.69838265277778
+            }
+        ]
+    },
+    {
+        "id": 130,
+        "paragraphs": "[22] Matthew B Hoy. 2018. Alexa, Siri, Cortana, and more: an introduction to voice assistants. Medical reference services",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.1399603783539,
+                "left": 9.42962962962963,
+                "top": 47.84949376388889
+            }
+        ]
+    },
+    {
+        "id": 131,
+        "paragraphs": "[23] Ellen Huet. 2016. The Humans hiding behind the chatbots. Bloomberg. com (April, 18, 2016) https://www. cnet.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.31903682921813,
+                "left": 9.429629629629629,
+                "top": 50.616854875
+            }
+        ]
+    },
+    {
+        "id": 132,
+        "paragraphs": "[24] Hilary Hutchinson, Wendy Mackay, Bo Westerlund, Benjamin B Bederson, Allison Druin, Catherine Plaisant, MichelBeaudouin-Lafon, St\u00e9phane Conversy, Helen Evans, Heiko Hansen, et al. 2003. Technology probes: inspiring designfor and with families. In Proceedings of the SIGCHI conference on Human factors in computing systems. 17\u201324.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.2984233749999925,
+                "width": 81.1408579959671,
+                "left": 9.429629629629623,
+                "top": 53.38421598611111
+            }
+        ]
+    },
+    {
+        "id": 133,
+        "paragraphs": "[25] Shamsi T Iqbal, Jaime Teevan, Dan Liebling, and Anne Loomis Thompson. 2018. Multitasking with Play Write, amobile microproductivity writing tool. In Proceedings of the 31st Annual ACM Symposium on User Interface Softwareand Technology. 411\u2013422.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.14113761646092,
+                "left": 9.429629629629623,
+                "top": 57.53532709722222
+            }
+        ]
+    },
+    {
+        "id": 134,
+        "paragraphs": "[26] Mohit Iyyer, Jordan Boyd-Graber, Leonardo Claudino, Richard Socher, and Hal Daum\u00e9 III. 2014. A neural networkfor factoid question answering over paragraphs. In Proceedings of the 2014 conference on empirical methods in naturallanguage processing (EMNLP). 633\u2013644.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.18295604238678,
+                "left": 9.42962962962963,
+                "top": 61.686438208333335
+            }
+        ]
+    },
+    {
+        "id": 135,
+        "paragraphs": "[27] Farnaz Jahanbakhsh, Ahmed Hassan Awadallah, Susan T Dumais, and Xuhai Xu. 2020. Effects of Past Interactionson User Experience with Recommended Documents. In Proceedings of the 2020 Conference on Human InformationInteraction and Retrieval. 153\u2013162.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111115,
+                "width": 81.1414752650206,
+                "left": 9.42962962962963,
+                "top": 65.83754931944443
+            }
+        ]
+    },
+    {
+        "id": 136,
+        "paragraphs": "[28] Corporate Vice President for Microsoft 365 Jared Spataro. [n.d.]. Collaborate with others and keep track of to-dos withnew AI features in Word. https://www.microsoft.com/en-us/microsoft-365/blog/2018/11/07/collaborate-with-others-and-keep-track-of-to-dos-with-new-ai-features-in-word/",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.297177527777778,
+                "width": 81.31607726337454,
+                "left": 9.429629629629629,
+                "top": 69.98866043055556
+            }
+        ]
+    },
+    {
+        "id": 137,
+        "paragraphs": "[29] Mandar Joshi, Eunsol Choi, Daniel S Weld, and Luke Zettlemoyer. 2017. Triviaqa: A large scale distantly supervised",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14140656633741,
+                "left": 9.42962962962963,
+                "top": 74.13977154166666
+            }
+        ]
+    },
+    {
+        "id": 138,
+        "paragraphs": "[30] Ece Kamar and WA Redmond. 2016. Hybrid Intelligence and the Future of Work. In Productivity Decom-posed: Getting Big Things Done with Little Microtasks Workshop (CHI 2016). http://research. microsoft. com/en-us/um/people/eckamar/papers/HybridIntelligence. pdf.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111115,
+                "width": 81.30532092757204,
+                "left": 9.429629629629623,
+                "top": 76.90713265277778
+            }
+        ]
+    },
+    {
+        "id": 139,
+        "paragraphs": "[31] Harmanpreet Kaur, Mitchell L Gordon, Yi Wei Yang, Jeffrey P Bigham, Jaime Teevan, Ece Kamar, and Walter S Lasecki.2017. CrowdMask: Using Crowds to Preserve Privacy in Crowd-Powered Systems via Progressive Filtering.. In HCOMP.89\u201397.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.29717752777778,
+                "width": 81.39328262551442,
+                "left": 9.42962962962963,
+                "top": 81.05824376388888
+            }
+        ]
+    },
+    {
+        "id": 140,
+        "paragraphs": "[32] Giridhar Kumaran and Vitor R Carvalho. 2009. Reducing long queries using query quality predictors. In Proceedings of",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000004,
+                "width": 81.1410047798354,
+                "left": 9.42962962962963,
+                "top": 85.209354875
+            }
+        ]
+    },
+    {
+        "id": 141,
+        "paragraphs": "the 32nd international ACM SIGIR conference on Research and development in information retrieval. 564\u2013571.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 71.21760551440329,
+                "left": 12.94238683127572,
+                "top": 86.593104875
+            }
+        ]
+    },
+    {
+        "id": 142,
+        "paragraphs": "[33] Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein,Illia Polosukhin, Jacob Devlin, Kenton Lee, et al. 2019. Natural questions: a benchmark for question answering research.",
+        "pageIndex": 22,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 2.913566416666667,
+                "width": 81.39294642427981,
+                "left": 9.429629629629623,
+                "top": 87.97671598611112
+            }
+        ]
+    },
+    {
+        "id": 143,
+        "paragraphs": "[34] J Richard Landis and Gary G Koch. 1977. The measurement of observer agreement for categorical data. biometrics",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 81.1406758506173,
+                "left": 9.429629629629623,
+                "top": 13.256993763888886
+            }
+        ]
+    },
+    {
+        "id": 144,
+        "paragraphs": "[35] Reed Larson and Mihaly Csikszentmihalyi. 2014. The experience sampling method. In Flow and the foundations of",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 81.14148025349793,
+                "left": 9.42962962962963,
+                "top": 16.024354875
+            }
+        ]
+    },
+    {
+        "id": 145,
+        "paragraphs": "[36] Walter S Lasecki, Mitchell Gordon, Jaime Teevan, Ece Kamar, and Jeffrey P Bigham. 2015. Preserving privacy in",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14113761646085,
+                "left": 9.42962962962963,
+                "top": 18.7917159861111
+            }
+        ]
+    },
+    {
+        "id": 146,
+        "paragraphs": "crowd-powered systems. In Proceedings of AAMAS 2015 Workshop on Human-Agent Interaction Design and Models.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 76.03259711934156,
+                "left": 12.94238683127572,
+                "top": 20.17546598611112
+            }
+        ]
+    },
+    {
+        "id": 147,
+        "paragraphs": "[37] Walter S Lasecki, Rachel Wesley, Jeffrey Nichols, Anand Kulkarni, James F Allen, and Jeffrey P Bigham. 2013. Chorus:a crowd-powered conversational assistant. In Proceedings of the 26th annual ACM symposium on User interface softwareand technology. 151\u2013162.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.33384676275723,
+                "left": 9.429629629629623,
+                "top": 21.559215986111116
+            }
+        ]
+    },
+    {
+        "id": 148,
+        "paragraphs": "[38] Nikolas Martelaro, Jaime Teevan, and Shamsi T. Iqbal. 2019. An Exploration of Speech-Based Productivity Support inthe Car. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (Glasgow, Scotland Uk)(CHI \u201919). Association for Computing Machinery, New York, NY, USA, 1\u201312. https://doi.org/10.1145/3290605.3300494[39] Cade Metz. 2015. AI helps humans best when humans help the AI. Wired.com (2015) https://www.wired.com/2015/09/ai-",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 5.682034486111117,
+                "width": 81.30469266131688,
+                "left": 9.42962962962963,
+                "top": 25.71018820833332
+            }
+        ]
+    },
+    {
+        "id": 149,
+        "paragraphs": "IFTTT Survey Provides Insight Into What People Do With Amazon\u2019s Echo And Google\u2019sHome. https://www.forbes.com/sites/kevinmurnane/2017/07/12/ifttt-survey-provides-insight-into-what-people-do-with-voice-controlled-assistants/#2d5966b643e6",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.100138944444451,
+                "width": 77.80226839835392,
+                "left": 12.94238683127572,
+                "top": 32.82583790277778
+            }
+        ]
+    },
+    {
+        "id": 150,
+        "paragraphs": "[41] Luke Murray, Divya Gopinath, Monica Agrawal, Steven Horng, David Sontag, and David R. Karger. 2021. MedKnowts:Unified Documentation and Information Retrieval for Electronic Health Records. In The 34th Annual ACM Symposiumon User Interface Software and Technology (UIST \u201921).",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.3336663695473,
+                "left": 9.42962962962963,
+                "top": 36.77991043055556
+            }
+        ]
+    },
+    {
+        "id": 151,
+        "paragraphs": "[42] Karen Myers, Pauline Berry, Jim Blythe, Ken Conley, Melinda Gervasio, Deborah L McGuinness, David Morley, AviPfeffer, Martha Pollack, and Milind Tambe. 2007. An intelligent personal assistant for task and time management. AIMagazine 28, 2 (2007), 47\u201347.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.14092606442388,
+                "left": 9.42962962962963,
+                "top": 40.931021541666674
+            }
+        ]
+    },
+    {
+        "id": 152,
+        "paragraphs": "[43] Tri Nguyen, Mir Rosenberg, Xia Song, Jianfeng Gao, Saurabh Tiwary, Rangan Majumder, and Li Deng. 2016. Ms marco:",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666657,
+                "width": 81.3336663695473,
+                "left": 9.42962962962963,
+                "top": 45.08199376388889
+            }
+        ]
+    },
+    {
+        "id": 153,
+        "paragraphs": "[44] Christi Olson and Kelli Kemery. 2019. Voice report: From answers to action: customer adoption of voice technology",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.18265101386828,
+                "left": 9.42962962962963,
+                "top": 47.84949376388889
+            }
+        ]
+    },
+    {
+        "id": 154,
+        "paragraphs": "[45] Judith S Olson, Dakuo Wang, Gary M Olson, and Jingwen Zhang. 2017. How people write together now: Beginning theinvestigation with advanced undergraduates in a project course. ACM Transactions on Computer-Human Interaction(TOCHI) 24, 1 (2017), 1\u201340.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111107,
+                "width": 81.14080962880655,
+                "left": 9.429629629629636,
+                "top": 50.616854875
+            }
+        ]
+    },
+    {
+        "id": 155,
+        "paragraphs": "[46] Emma Persky. [n.d.]. Now we\u2019re cooking \u2013 the Assistant on Google Home is your secret ingredient. https://www.blog.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.39361942226337,
+                "left": 9.42962962962963,
+                "top": 54.76796598611112
+            }
+        ]
+    },
+    {
+        "id": 156,
+        "paragraphs": "[47] Ilona R Posner and Ronald M Baecker. 1992. How people write together (groupware). In Proceedings of the Twenty-Fifth",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.14005758395061,
+                "left": 9.42962962962963,
+                "top": 57.53532709722222
+            }
+        ]
+    },
+    {
+        "id": 157,
+        "paragraphs": "[48] Pranav Rajpurkar, Robin Jia, and Percy Liang. 2018. Know what you don\u2019t know: Unanswerable questions for SQuAD.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666657,
+                "width": 81.39310593220165,
+                "left": 9.42962962962963,
+                "top": 60.30268820833333
+            }
+        ]
+    },
+    {
+        "id": 158,
+        "paragraphs": "[49] Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14113761646091,
+                "left": 9.429629629629634,
+                "top": 63.070188208333335
+            }
+        ]
+    },
+    {
+        "id": 159,
+        "paragraphs": "[50] Daniela Retelny, S\u00e9bastien Robaszkiewicz, Alexandra To, Walter S Lasecki, Jay Patel, Negar Rahmati, Tulsee Doshi,Melissa Valentine, and Michael S Bernstein. 2014. Expert crowdsourcing with flash teams. In Proceedings of the 27thannual ACM symposium on User interface software and technology. 75\u201385.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111115,
+                "width": 81.3215554254115,
+                "left": 9.42962962962963,
+                "top": 65.83754931944443
+            }
+        ]
+    },
+    {
+        "id": 160,
+        "paragraphs": "[51] Matthew Richardson and Ryen W White. 2011. Supporting synchronous social q&a throughout the question lifecycle.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666697,
+                "width": 81.39374714806588,
+                "left": 9.429629629629623,
+                "top": 69.98866043055556
+            }
+        ]
+    },
+    {
+        "id": 161,
+        "paragraphs": "[52] Yu Su, Ahmed Hassan Awadallah, Madian Khabsa, Patrick Pantel, Michael Gamon, and Mark Encarnacion. 2017.Building natural language interfaces to web apis. In Proceedings of the 2017 ACM on Conference on Information andKnowledge Management. 177\u2013186.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298423375000004,
+                "width": 81.39372090905346,
+                "left": 9.42962962962963,
+                "top": 72.75602154166666
+            }
+        ]
+    },
+    {
+        "id": 162,
+        "paragraphs": "[53] Nicole Sultanum, Devin Singh, Michael Brudno, and Fanny Chevalier. 2018. Doccurate: A curation-based approach for",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.17134527942385,
+                "left": 9.42962962962963,
+                "top": 76.90713265277778
+            }
+        ]
+    },
+    {
+        "id": 163,
+        "paragraphs": "clinical text visualization. IEEE transactions on visualization and computer graphics 25, 1 (2018), 142\u2013151.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 69.5456563580247,
+                "left": 12.94238683127572,
+                "top": 78.29088265277778
+            }
+        ]
+    },
+    {
+        "id": 164,
+        "paragraphs": "[54] Yunting Sun, Diane Lambert, Makoto Uchida, and Nicolas Remy. 2014. Collaboration in the cloud at Google. In",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666697,
+                "width": 81.14113761646091,
+                "left": 9.429629629629623,
+                "top": 79.67449376388889
+            }
+        ]
+    },
+    {
+        "id": 165,
+        "paragraphs": "[55] Maartje ter Hoeve, Robert Sim, Elnaz Nouri, Adam Fourney, Maarten de Rijke, and Ryen W White. 2020. Conversationswith Documents: An Exploration of Document-Centered Assistance. In Proceedings of the 2020 Conference on HumanInformation Interaction and Retrieval. 43\u201352.",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.298284486111115,
+                "width": 81.14080962880658,
+                "left": 9.42962962962963,
+                "top": 82.44199376388889
+            }
+        ]
+    },
+    {
+        "id": 166,
+        "paragraphs": "[56] Kashyap Todi, Luis A Leiva, Daniel Buschek, Pin Tian, and Antti Oulasvirta. 2021. Conversations with GUIs. In",
+        "pageIndex": 23,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666677,
+                "width": 81.14113761646088,
+                "left": 9.42962962962963,
+                "top": 86.593104875
+            }
+        ]
+    },
+    {
+        "id": 167,
+        "paragraphs": "[57] Gokhan Tur, Anoop Deoras, and Dilek Hakkani-T\u00fcr. 2014. Detecting out-of-domain utterances addressed to a virtual",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14129505053498,
+                "left": 9.429629629629623,
+                "top": 11.87324376388888
+            }
+        ]
+    },
+    {
+        "id": 168,
+        "paragraphs": "personal assistant. In Fifteenth Annual Conference of the International Speech Communication Association.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 69.79082757201645,
+                "left": 12.94238683127572,
+                "top": 13.256993763888886
+            }
+        ]
+    },
+    {
+        "id": 169,
+        "paragraphs": "[58] Melissa A Valentine, Daniela Retelny, Alexandra To, Negar Rahmati, Tulsee Doshi, and Michael S Bernstein. 2017.Flash organizations: Crowdsourcing complex work by structuring crowds as organizations. In Proceedings of the 2017CHI conference on human factors in computing systems. 3523\u20133537.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.2984233750000085,
+                "width": 81.39372090905349,
+                "left": 9.429629629629623,
+                "top": 14.640604874999994
+            }
+        ]
+    },
+    {
+        "id": 170,
+        "paragraphs": "[59] Dakuo Wang, Haodan Tan, and Tun Lu. 2017. Why users do not want to write together when they are writing together:Users\u2019 rationales for today\u2019s collaborative writing practices. Proceedings of the ACM on Human-Computer Interaction 1,CSCW (2017), 1\u201318.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.297316416666679,
+                "width": 81.3336663695473,
+                "left": 9.42962962962963,
+                "top": 18.7917159861111
+            }
+        ]
+    },
+    {
+        "id": 171,
+        "paragraphs": "[60] Ryen W White, Matthew Richardson, and Yandong Liu. 2011. Effects of community size and contact rate in synchronous",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14080962880658,
+                "left": 9.42962962962963,
+                "top": 22.94282709722222
+            }
+        ]
+    },
+    {
+        "id": 172,
+        "paragraphs": "social Q&A. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems. 2837\u20132846.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.530923375000002,
+                "width": 70.09583452674896,
+                "left": 12.94238683127572,
+                "top": 24.326577097222213
+            }
+        ]
+    },
+    {
+        "id": 173,
+        "paragraphs": "[61] Han Xiao, Feng Wang, Jianfeng Yan, and Jingyao Zheng. 2018. Dual ask-answer network for machine reading",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666737,
+                "width": 81.14113761646088,
+                "left": 9.429629629629623,
+                "top": 25.71018820833332
+            }
+        ]
+    },
+    {
+        "id": 174,
+        "paragraphs": "[62] Yi Yang, Wen-tau Yih, and Christopher Meek. 2015. Wikiqa: A challenge dataset for open-domain question answering.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5298164166666812,
+                "width": 81.39263854979419,
+                "left": 9.42962962962963,
+                "top": 28.477688208333333
+            }
+        ]
+    },
+    {
+        "id": 175,
+        "paragraphs": "In Proceedings of the 2015 conference on empirical methods in natural language processing. 2013\u20132018.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 66.79151353909465,
+                "left": 12.94238683127572,
+                "top": 29.86129931944444
+            }
+        ]
+    },
+    {
+        "id": 176,
+        "paragraphs": "[63] Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W Cohen, Ruslan Salakhutdinov, and Christopher D Man-ning. 2018. Hotpotqa: A dataset for diverse, explainable multi-hop question answering. arXiv preprint arXiv:1809.09600(2018).",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.297177527777778,
+                "width": 81.41723762386832,
+                "left": 9.429629629629623,
+                "top": 31.245049319444448
+            }
+        ]
+    },
+    {
+        "id": 177,
+        "paragraphs": "[64] Jin-ge Yao, Xiaojun Wan, and Jianguo Xiao. 2017. Recent advances in document summarization. Knowledge and",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 1.5309233749999942,
+                "width": 81.14105272098766,
+                "left": 9.42962962962963,
+                "top": 35.396160430555554
+            }
+        ]
+    },
+    {
+        "id": 178,
+        "paragraphs": "[65] Soobin Yim, Dakuo Wang, Judith Olson, Viet Vu, and Mark Warschauer. 2017. Synchronous writing in the classroom:Undergraduates\u2019 collaborative practices and their impact on text quality, quantity, and style. In Proceedings of theConference on Computer Supported Cooperative Work (CSCW\u201917), Vol. 10.",
+        "pageIndex": 24,
+        "start": "07:58",
+        "end": "08:28",
+        "highlights": [
+            {
+                "height": 4.2984233749999925,
+                "width": 81.33384676275718,
+                "left": 9.429629629629629,
+                "top": 38.16352154166667
+            }
+        ]
+    }
+]

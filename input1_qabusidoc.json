@@ -1,0 +1,3165 @@
+{
+    "sourcePath": "/qabusidoc/",
+    "template": {
+        "width": 1270,
+        "height": 730,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "base_font_size": 16,
+        "top_img": "null",
+        "top_img_dark": "null",
+        "bottom_img": "null",
+        "bottom_img_dark": "null",
+        "fontUrl": [
+            "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+        ],
+        "toggleTemplateButton": "false",
+        "toggleInstructorButton": "false"
+    },
+    "video": {
+        "source": "qabusidoc.mp4",
+        "control": [
+            {
+                "start_time": 0.0,
+                "box_info": "null"
+            },
+            {
+                "start_time": 0,
+                "box_info": [
+                    50,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        ]
+    },
+    "content": {
+        "original": [
+            {
+                "shot_id": 1,
+                "slide_id": 0,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/000_0.0.png",
+                "start_time": 0.0,
+                "end_time": 1.7999999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 10000,
+                        "box_info_original": [
+                            39.43418502807617,
+                            114.9763548374176,
+                            544.3249702453613,
+                            114.37918782234192
+                        ],
+                        "path": "qabusidoc/000_0/000_0.0.png_title_0.5354524430974866.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 10000,
+                        "box_info_original": [
+                            373.0244445800781,
+                            674.4711542129517,
+                            202.87750244140625,
+                            27.301025390625
+                        ],
+                        "path": "qabusidoc/000_0/000_0.0.png_text box_0.9687098958345836.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 10000,
+                        "box_info_original": [
+                            86.55014038085938,
+                            445.55405616760254,
+                            439.4704055786133,
+                            57.34069347381592
+                        ],
+                        "path": "qabusidoc/000_0/000_0.0.png_text box_0.7663679952867488.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 10000,
+                        "box_info_original": [
+                            3.98406982421875,
+                            49.619101881980896,
+                            1276.0159301757812,
+                            652.3640924692154
+                        ],
+                        "path": "qabusidoc/000_0/000_0.0.png_chart_0.6991002264593362.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 2,
+                "slide_id": 1,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/001_0.03.png",
+                "start_time": 1.7999999999999998,
+                "end_time": 19.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 20000,
+                        "box_info_original": [
+                            98.768310546875,
+                            96.99534058570862,
+                            1092.541046142578,
+                            272.07799315452576
+                        ],
+                        "path": "qabusidoc/001_0/001_0.03.png_title_0.42882976819889607.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 20000,
+                        "box_info_original": [
+                            111.666259765625,
+                            424.17075634002686,
+                            1059.9177551269531,
+                            88.8634729385376
+                        ],
+                        "path": "qabusidoc/001_0/001_0.03.png_text box_0.9626821344743949.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 20000,
+                        "box_info_original": [
+                            856.8334197998047,
+                            623.293833732605,
+                            417.3692321777344,
+                            87.39426612854004
+                        ],
+                        "path": "qabusidoc/001_0/001_0.03.png_text box_0.35241241426117575.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 20000,
+                        "box_info_original": [
+                            948.408203125,
+                            630.2747011184692,
+                            318.9984130859375,
+                            74.12020683288574
+                        ],
+                        "path": "qabusidoc/001_0/001_0.03.png_text box_0.41000837069347373.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 3,
+                "slide_id": 2,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/002_0.32.png",
+                "start_time": 19.2,
+                "end_time": 42.599999999999994,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 30000,
+                        "box_info_original": [
+                            106.96258544921876,
+                            367.1801233291626,
+                            1063.8044738769531,
+                            61.74067497253418
+                        ],
+                        "path": "qabusidoc/002_0/002_0.32.png_text box_0.18441645213631885.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 30000,
+                        "box_info_original": [
+                            388.8765335083008,
+                            37.51577317714691,
+                            495.7442855834961,
+                            261.8084317445755
+                        ],
+                        "path": "qabusidoc/002_0/002_0.32.png_handwriting_0.7511195925287931.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 4,
+                "slide_id": 3,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/003_0.71.png",
+                "start_time": 42.599999999999994,
+                "end_time": 55.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 40000,
+                        "box_info_original": [
+                            92.07637786865234,
+                            299.8175811767578,
+                            1091.874885559082,
+                            126.71287536621094
+                        ],
+                        "path": "qabusidoc/003_0/003_0.71.png_text box_0.7044955952795998.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 5,
+                "slide_id": 4,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/006_0.92.png",
+                "start_time": 55.2,
+                "end_time": 64.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 50000,
+                        "box_info_original": [
+                            54.52644348144531,
+                            79.1696959733963,
+                            740.0396728515625,
+                            52.30481922626496
+                        ],
+                        "path": "qabusidoc/006_0/006_0.92.png_text box_0.9438708113496256.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 6,
+                "slide_id": 5,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/017_1.07.png",
+                "start_time": 64.2,
+                "end_time": 77.4,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 60000,
+                        "box_info_original": [
+                            53.43433380126953,
+                            78.57122540473938,
+                            742.0389938354492,
+                            52.58382797241211
+                        ],
+                        "path": "qabusidoc/017_1/017_1.07.png_title_0.23731769147557125.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 60000,
+                        "box_info_original": [
+                            66.33106231689453,
+                            181.90975427627563,
+                            1110.5756759643557,
+                            146.06945514678955
+                        ],
+                        "path": "qabusidoc/017_1/017_1.07.png_text box_0.17444859139952829.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 60000,
+                        "box_info_original": [
+                            55.59699058532715,
+                            179.39567685127258,
+                            120.6761646270752,
+                            31.2936007976532
+                        ],
+                        "path": "qabusidoc/017_1/017_1.07.png_text box_0.6691451846811028.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 60000,
+                        "box_info_original": [
+                            67.69454956054688,
+                            240.77282667160037,
+                            1108.5011291503906,
+                            84.12139177322388
+                        ],
+                        "path": "qabusidoc/017_1/017_1.07.png_text box_0.6628568400115173.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 7,
+                "slide_id": 6,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/020_1.29.png",
+                "start_time": 77.4,
+                "end_time": 78.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 70000,
+                        "box_info_original": [
+                            53.70475769042969,
+                            78.52615356445312,
+                            741.2364959716797,
+                            52.40326166152954
+                        ],
+                        "path": "qabusidoc/020_1/020_1.29.png_title_0.3340360848728089.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 70000,
+                        "box_info_original": [
+                            61.93492889404297,
+                            185.1052737236023,
+                            1109.1626358032229,
+                            180.7868313789368
+                        ],
+                        "path": "qabusidoc/020_1/020_1.29.png_text box_0.5640634779529837.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 70000,
+                        "box_info_original": [
+                            54.56047058105469,
+                            460.4864931106568,
+                            968.9842224121094,
+                            37.09404945373535
+                        ],
+                        "path": "qabusidoc/020_1/020_1.29.png_text box_0.23063709887313866.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 70000,
+                        "box_info_original": [
+                            63.73920440673828,
+                            240.33504724502563,
+                            1105.9809494018557,
+                            128.61074209213257
+                        ],
+                        "path": "qabusidoc/020_1/020_1.29.png_text box_0.30437355213473416.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 70000,
+                        "box_info_original": [
+                            55.92947959899902,
+                            179.29376363754272,
+                            120.51060676574708,
+                            31.207973957061768
+                        ],
+                        "path": "qabusidoc/020_1/020_1.29.png_text box_0.2678580140946658.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 8,
+                "slide_id": 7,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/021_1.3.png",
+                "start_time": 78.0,
+                "end_time": 87.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 80000,
+                        "box_info_original": [
+                            53.70304107666016,
+                            78.5263842344284,
+                            741.2385177612305,
+                            52.40259110927582
+                        ],
+                        "path": "qabusidoc/021_1/021_1.3.png_title_0.6340549098913367.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 80000,
+                        "box_info_original": [
+                            61.89743041992188,
+                            185.08448123931885,
+                            1109.2062377929688,
+                            180.82157135009768
+                        ],
+                        "path": "qabusidoc/021_1/021_1.3.png_text box_0.4243669459067363.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 80000,
+                        "box_info_original": [
+                            54.493141174316406,
+                            460.5058908462525,
+                            969.062156677246,
+                            37.06396579742432
+                        ],
+                        "path": "qabusidoc/021_1/021_1.3.png_text box_0.4723495957996888.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 80000,
+                        "box_info_original": [
+                            63.70624542236328,
+                            240.30513525009155,
+                            1106.0277938842771,
+                            128.6741280555725
+                        ],
+                        "path": "qabusidoc/021_1/021_1.3.png_text box_0.09370124671280644.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 80000,
+                        "box_info_original": [
+                            55.928449630737305,
+                            179.29311990737915,
+                            120.50881385803224,
+                            31.20778083801269
+                        ],
+                        "path": "qabusidoc/021_1/021_1.3.png_text box_0.00021149724934499403.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 9,
+                "slide_id": 8,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/022_1.45.png",
+                "start_time": 87.0,
+                "end_time": 114.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            53.69274139404297,
+                            78.54366302490234,
+                            741.4018630981445,
+                            52.42798089981079
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_title_0.7343923328686491.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            55.99292755126953,
+                            458.72893810272217,
+                            991.9103622436523,
+                            151.62652015686035
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.8202557037639999.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            61.66404724121094,
+                            185.426881313324,
+                            1110.5345153808594,
+                            180.13516187667847
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.1784080746875375.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            63.46607208251953,
+                            239.10223960876465,
+                            1107.4828720092771,
+                            131.03659629821777
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.9961526817411935.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            56.2271785736084,
+                            179.35171008110046,
+                            119.88835334777832,
+                            31.111382246017456
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.6320759094318587.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            53.87439727783203,
+                            461.4511013031006,
+                            969.2852401733398,
+                            34.83322620391846
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.15910178313810386.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            65.16597747802734,
+                            570.8707666397095,
+                            986.7421340942384,
+                            35.24787425994873
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.7071441748853682.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 90000,
+                        "box_info_original": [
+                            68.95444869995117,
+                            524.9880409240723,
+                            611.4087867736816,
+                            37.05761432647705
+                        ],
+                        "path": "qabusidoc/022_1/022_1.45.png_text box_0.2222896716956828.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 10,
+                "slide_id": 9,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/026_1.9.png",
+                "start_time": 114.0,
+                "end_time": 117.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 100000,
+                        "box_info_original": [
+                            52.08827972412109,
+                            79.35315907001495,
+                            929.5080947875977,
+                            51.50744140148163
+                        ],
+                        "path": "qabusidoc/026_1/026_1.9.png_text box_0.07950031375845479.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 11,
+                "slide_id": 10,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/027_1.95.png",
+                "start_time": 117.0,
+                "end_time": 117.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 110000,
+                        "box_info_original": [
+                            52.33436584472656,
+                            77.7772057056427,
+                            928.107681274414,
+                            53.25266361236572
+                        ],
+                        "path": "qabusidoc/027_1/027_1.95.png_title_0.3798147800413747.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 110000,
+                        "box_info_original": [
+                            71.63230895996094,
+                            178.01677465438843,
+                            1029.6971130371094,
+                            73.5228681564331
+                        ],
+                        "path": "qabusidoc/027_1/027_1.95.png_text box_0.25641382745651775.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 12,
+                "slide_id": 11,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/030_1.96.png",
+                "start_time": 117.6,
+                "end_time": 123.60000000000001,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 120000,
+                        "box_info_original": [
+                            70.66020965576172,
+                            177.5878143310547,
+                            1032.8448867797852,
+                            76.26393556594849
+                        ],
+                        "path": "qabusidoc/030_1/030_1.96.png_text box_0.39466443780626015.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 120000,
+                        "box_info_original": [
+                            53.36894989013672,
+                            77.86771953105927,
+                            926.7995071411132,
+                            52.85524070262909
+                        ],
+                        "path": "qabusidoc/030_1/030_1.96.png_title_0.4349334771195017.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 13,
+                "slide_id": 12,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/034_2.06.png",
+                "start_time": 123.60000000000001,
+                "end_time": 135.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 130000,
+                        "box_info_original": [
+                            52.78739929199219,
+                            78.15406680107117,
+                            926.9718933105468,
+                            52.76363253593445
+                        ],
+                        "path": "qabusidoc/034_2/034_2.06.png_title_0.8141069892109803.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 130000,
+                        "box_info_original": [
+                            69.63420867919922,
+                            179.26241397857666,
+                            1034.5337295532229,
+                            75.48588037490845
+                        ],
+                        "path": "qabusidoc/034_2/034_2.06.png_text box_0.12348708133372066.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 130000,
+                        "box_info_original": [
+                            72.82360076904297,
+                            265.14721870422363,
+                            904.2105484008788,
+                            36.947922706604
+                        ],
+                        "path": "qabusidoc/034_2/034_2.06.png_text box_0.9774044704931202.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 14,
+                "slide_id": 13,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/037_2.26.png",
+                "start_time": 135.6,
+                "end_time": 135.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 140000,
+                        "box_info_original": [
+                            54.54425811767578,
+                            79.39080119132996,
+                            408.7921524047852,
+                            47.63990521430969
+                        ],
+                        "path": "qabusidoc/037_2/037_2.26.png_title_0.8950353908461148.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 140000,
+                        "box_info_original": [
+                            63.86634826660156,
+                            174.26959991455078,
+                            1102.2434997558594,
+                            37.09407091140747
+                        ],
+                        "path": "qabusidoc/037_2/037_2.26.png_text box_0.16052644958044004.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 15,
+                "slide_id": 14,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/038_2.26.png",
+                "start_time": 135.6,
+                "end_time": 136.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 150000,
+                        "box_info_original": [
+                            70.6381607055664,
+                            175.91657280921936,
+                            1092.3978805541992,
+                            78.5723626613617
+                        ],
+                        "path": "qabusidoc/038_2/038_2.26.png_text box_0.8035699256849905.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 150000,
+                        "box_info_original": [
+                            54.98435974121094,
+                            79.07394647598267,
+                            407.8110504150391,
+                            47.60844826698303
+                        ],
+                        "path": "qabusidoc/038_2/038_2.26.png_title_0.6738342738422165.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 16,
+                "slide_id": 15,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/039_2.27.png",
+                "start_time": 136.2,
+                "end_time": 136.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 160000,
+                        "box_info_original": [
+                            70.5477523803711,
+                            176.64218544960022,
+                            1092.922706604004,
+                            77.56657719612122
+                        ],
+                        "path": "qabusidoc/039_2/039_2.27.png_text box_0.8697719566890068.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 160000,
+                        "box_info_original": [
+                            55.01728057861328,
+                            79.06842112541199,
+                            407.7594375610352,
+                            47.46645212173462
+                        ],
+                        "path": "qabusidoc/039_2/039_2.27.png_title_0.03456469072726276.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 17,
+                "slide_id": 16,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/040_2.27.png",
+                "start_time": 136.2,
+                "end_time": 136.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 170000,
+                        "box_info_original": [
+                            70.46684265136719,
+                            177.13420987129211,
+                            1093.3626556396484,
+                            77.22621560096741
+                        ],
+                        "path": "qabusidoc/040_2/040_2.27.png_text box_0.051205828139245124.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 170000,
+                        "box_info_original": [
+                            55.1161003112793,
+                            79.13248300552368,
+                            407.6470375061035,
+                            47.29629278182984
+                        ],
+                        "path": "qabusidoc/040_2/040_2.27.png_title_0.8017567968336864.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 18,
+                "slide_id": 17,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/041_2.27.png",
+                "start_time": 136.2,
+                "end_time": 136.79999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 180000,
+                        "box_info_original": [
+                            70.27801513671875,
+                            177.4153482913971,
+                            1093.6532592773438,
+                            77.2018826007843
+                        ],
+                        "path": "qabusidoc/041_2/041_2.27.png_text box_0.6274748896793203.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 180000,
+                        "box_info_original": [
+                            55.29802322387695,
+                            79.18643832206726,
+                            407.418270111084,
+                            47.1742308139801
+                        ],
+                        "path": "qabusidoc/041_2/041_2.27.png_title_0.9248976124121611.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 19,
+                "slide_id": 18,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/042_2.28.png",
+                "start_time": 136.79999999999998,
+                "end_time": 136.79999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 190000,
+                        "box_info_original": [
+                            70.2023696899414,
+                            177.5183880329132,
+                            1093.798484802246,
+                            77.2113025188446
+                        ],
+                        "path": "qabusidoc/042_2/042_2.28.png_text box_0.9543770484318722.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 190000,
+                        "box_info_original": [
+                            55.296478271484375,
+                            79.19209778308868,
+                            407.4227142333984,
+                            47.1646124124527
+                        ],
+                        "path": "qabusidoc/042_2/042_2.28.png_title_0.9817483394218758.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 20,
+                "slide_id": 19,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/043_2.28.png",
+                "start_time": 136.79999999999998,
+                "end_time": 141.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 200000,
+                        "box_info_original": [
+                            70.20217895507812,
+                            177.5157594680786,
+                            1093.7828063964844,
+                            77.20412492752075
+                        ],
+                        "path": "qabusidoc/043_2/043_2.28.png_text box_0.9782772677668314.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 200000,
+                        "box_info_original": [
+                            55.29691696166992,
+                            79.19238209724426,
+                            407.4219703674317,
+                            47.16413497924805
+                        ],
+                        "path": "qabusidoc/043_2/043_2.28.png_title_0.8439524615291177.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 21,
+                "slide_id": 20,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/044_2.36.png",
+                "start_time": 141.6,
+                "end_time": 142.20000000000002,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 210000,
+                        "box_info_original": [
+                            66.75312042236328,
+                            178.69848489761353,
+                            1098.6535263061523,
+                            76.2207841873169
+                        ],
+                        "path": "qabusidoc/044_2/044_2.36.png_text box_0.7767825194355357.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 210000,
+                        "box_info_original": [
+                            55.43489456176758,
+                            79.40454483032227,
+                            407.0736503601074,
+                            46.78051471710205
+                        ],
+                        "path": "qabusidoc/044_2/044_2.36.png_title_0.8014163358281842.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 210000,
+                        "box_info_original": [
+                            69.400634765625,
+                            267.2745966911316,
+                            1103.5124969482422,
+                            75.6213641166687
+                        ],
+                        "path": "qabusidoc/044_2/044_2.36.png_text box_0.49365560886395166.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 22,
+                "slide_id": 21,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/045_2.37.png",
+                "start_time": 142.20000000000002,
+                "end_time": 142.20000000000002,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 220000,
+                        "box_info_original": [
+                            67.92591094970703,
+                            178.68362545967102,
+                            1096.134147644043,
+                            76.54514908790588
+                        ],
+                        "path": "qabusidoc/045_2/045_2.37.png_text box_0.9583026617805172.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 220000,
+                        "box_info_original": [
+                            55.436553955078125,
+                            79.52078104019165,
+                            407.08473205566406,
+                            46.56530499458313
+                        ],
+                        "path": "qabusidoc/045_2/045_2.37.png_title_0.6462813342653911.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 220000,
+                        "box_info_original": [
+                            67.92858123779297,
+                            268.0695390701294,
+                            1106.3315200805664,
+                            74.97576713562012
+                        ],
+                        "path": "qabusidoc/045_2/045_2.37.png_text box_0.5057026285569892.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 220000,
+                        "box_info_original": [
+                            69.63478088378906,
+                            267.7455282211304,
+                            1098.4673309326172,
+                            34.43816900253296
+                        ],
+                        "path": "qabusidoc/045_2/045_2.37.png_text box_0.1306632763604667.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 23,
+                "slide_id": 22,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/046_2.37.png",
+                "start_time": 142.20000000000002,
+                "end_time": 142.20000000000002,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 230000,
+                        "box_info_original": [
+                            67.34954833984375,
+                            178.6384356021881,
+                            1097.7920532226562,
+                            77.13935494422913
+                        ],
+                        "path": "qabusidoc/046_2/046_2.37.png_text box_0.1688280043199456.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 230000,
+                        "box_info_original": [
+                            55.39886474609375,
+                            79.62345063686371,
+                            407.1977615356445,
+                            46.38294160366058
+                        ],
+                        "path": "qabusidoc/046_2/046_2.37.png_title_0.03326220220527809.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 230000,
+                        "box_info_original": [
+                            66.56593322753906,
+                            265.57605028152466,
+                            1104.050750732422,
+                            38.23132753372192
+                        ],
+                        "path": "qabusidoc/046_2/046_2.37.png_text box_0.19060400684566026.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 230000,
+                        "box_info_original": [
+                            65.38311004638672,
+                            176.99958443641663,
+                            1100.210304260254,
+                            36.91040396690369
+                        ],
+                        "path": "qabusidoc/046_2/046_2.37.png_text box_0.42956872259306267.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 24,
+                "slide_id": 23,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/047_2.37.png",
+                "start_time": 142.20000000000002,
+                "end_time": 142.79999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 240000,
+                        "box_info_original": [
+                            55.37641525268555,
+                            79.68396663665771,
+                            407.235050201416,
+                            46.27570152282715
+                        ],
+                        "path": "qabusidoc/047_2/047_2.37.png_title_0.16297656431516772.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 240000,
+                        "box_info_original": [
+                            64.82658386230469,
+                            177.0284879207611,
+                            1101.4369201660156,
+                            36.74389243125916
+                        ],
+                        "path": "qabusidoc/047_2/047_2.37.png_text box_0.8934685488237277.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 240000,
+                        "box_info_original": [
+                            66.65119171142578,
+                            264.7139024734497,
+                            1103.7234115600586,
+                            39.88783836364746
+                        ],
+                        "path": "qabusidoc/047_2/047_2.37.png_text box_0.3018893512245111.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 240000,
+                        "box_info_original": [
+                            66.5768814086914,
+                            178.89970421791077,
+                            1099.6508407592771,
+                            76.80616021156311
+                        ],
+                        "path": "qabusidoc/047_2/047_2.37.png_text box_0.6457851004482399.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 240000,
+                        "box_info_original": [
+                            71.54054641723633,
+                            219.932062625885,
+                            460.3244590759277,
+                            37.63534069061279
+                        ],
+                        "path": "qabusidoc/047_2/047_2.37.png_text box_0.7953823552746723.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 25,
+                "slide_id": 24,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/048_2.38.png",
+                "start_time": 142.79999999999998,
+                "end_time": 142.79999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 250000,
+                        "box_info_original": [
+                            55.37578582763672,
+                            79.69046831130981,
+                            407.23522186279297,
+                            46.26190423965454
+                        ],
+                        "path": "qabusidoc/048_2/048_2.38.png_title_0.07792146789501275.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 250000,
+                        "box_info_original": [
+                            64.71607208251953,
+                            176.99512124061584,
+                            1101.7174911499023,
+                            36.74286246299744
+                        ],
+                        "path": "qabusidoc/048_2/048_2.38.png_text box_0.40823569751679334.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 250000,
+                        "box_info_original": [
+                            66.715087890625,
+                            264.6963715553284,
+                            1103.538818359375,
+                            39.99130725860596
+                        ],
+                        "path": "qabusidoc/048_2/048_2.38.png_text box_0.9963914913644071.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 250000,
+                        "box_info_original": [
+                            66.43257141113281,
+                            178.86425614356995,
+                            1099.9745178222656,
+                            76.66213631629944
+                        ],
+                        "path": "qabusidoc/048_2/048_2.38.png_text box_0.9450794454054797.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 250000,
+                        "box_info_original": [
+                            71.47041320800781,
+                            220.1008915901184,
+                            460.5098724365234,
+                            37.32426881790161
+                        ],
+                        "path": "qabusidoc/048_2/048_2.38.png_text box_0.13692216204306484.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 26,
+                "slide_id": 25,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/049_2.38.png",
+                "start_time": 142.79999999999998,
+                "end_time": 142.79999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 260000,
+                        "box_info_original": [
+                            55.37664413452149,
+                            79.690500497818,
+                            407.23405838012695,
+                            46.262086629867554
+                        ],
+                        "path": "qabusidoc/049_2/049_2.38.png_title_0.8408077729194424.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 260000,
+                        "box_info_original": [
+                            64.69902038574219,
+                            176.99126958847046,
+                            1101.741943359375,
+                            36.7457914352417
+                        ],
+                        "path": "qabusidoc/049_2/049_2.38.png_text box_0.6433622083582827.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 260000,
+                        "box_info_original": [
+                            66.72477722167969,
+                            264.66161012649536,
+                            1103.5177612304688,
+                            40.05306243896485
+                        ],
+                        "path": "qabusidoc/049_2/049_2.38.png_text box_0.3639353470061264.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 260000,
+                        "box_info_original": [
+                            66.4126968383789,
+                            178.8641381263733,
+                            1100.0056076049805,
+                            76.65412187576294
+                        ],
+                        "path": "qabusidoc/049_2/049_2.38.png_text box_0.7658668644671215.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 260000,
+                        "box_info_original": [
+                            71.46844863891602,
+                            220.0949048995972,
+                            460.5151176452637,
+                            37.32928991317749
+                        ],
+                        "path": "qabusidoc/049_2/049_2.38.png_text box_0.8301604746169172.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 27,
+                "slide_id": 26,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/050_2.38.png",
+                "start_time": 142.79999999999998,
+                "end_time": 170.39999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 270000,
+                        "box_info_original": [
+                            55.37664413452149,
+                            79.690500497818,
+                            407.23405838012695,
+                            46.262086629867554
+                        ],
+                        "path": "qabusidoc/050_2/050_2.38.png_title_0.9503745421289023.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 270000,
+                        "box_info_original": [
+                            64.69902038574219,
+                            176.99126958847046,
+                            1101.741943359375,
+                            36.7457914352417
+                        ],
+                        "path": "qabusidoc/050_2/050_2.38.png_text box_0.26824864767916046.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 270000,
+                        "box_info_original": [
+                            66.72477722167969,
+                            264.66161012649536,
+                            1103.5177612304688,
+                            40.05306243896485
+                        ],
+                        "path": "qabusidoc/050_2/050_2.38.png_text box_0.13681762996092273.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 270000,
+                        "box_info_original": [
+                            66.4126968383789,
+                            178.8641381263733,
+                            1100.0056076049805,
+                            76.65412187576294
+                        ],
+                        "path": "qabusidoc/050_2/050_2.38.png_text box_0.8999233182000913.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 270000,
+                        "box_info_original": [
+                            71.46844863891602,
+                            220.0949048995972,
+                            460.5151176452637,
+                            37.32928991317749
+                        ],
+                        "path": "qabusidoc/050_2/050_2.38.png_text box_0.6652288986232583.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 28,
+                "slide_id": 27,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/051_2.84.png",
+                "start_time": 170.39999999999998,
+                "end_time": 170.39999999999998,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            68.63182067871094,
+                            264.8711442947388,
+                            1098.816375732422,
+                            39.827070236206055
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.9671534373220628.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            55.285186767578125,
+                            79.70039784908295,
+                            407.3745727539063,
+                            46.26048266887665
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_title_0.5359590871703419.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            64.37511444091797,
+                            177.15073227882385,
+                            1102.811622619629,
+                            36.54841303825378
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.14952439831986164.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            73.6724853515625,
+                            397.5825119018554,
+                            1084.6936798095703,
+                            32.5799560546875
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.46990282259081206.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            66.15276336669922,
+                            179.18911457061768,
+                            1100.8086013793943,
+                            75.23242235183716
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.146681226368506.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            71.39631271362305,
+                            220.09833812713623,
+                            460.5914497375488,
+                            37.48936414718628
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.4470755304514924.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 280000,
+                        "box_info_original": [
+                            68.49365234375,
+                            311.8044590950012,
+                            886.4607238769531,
+                            32.2513747215271
+                        ],
+                        "path": "qabusidoc/051_2/051_2.84.png_text box_0.15484016089075803.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 29,
+                "slide_id": 28,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/052_2.84.png",
+                "start_time": 170.39999999999998,
+                "end_time": 171.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            69.82025146484375,
+                            265.0822448730469,
+                            1096.1801147460938,
+                            39.263763427734375
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.42355314008871536.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            55.280609130859375,
+                            79.69276428222656,
+                            407.37281799316406,
+                            46.30300641059876
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_title_0.323077852219653.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            66.40674591064453,
+                            178.86213183403015,
+                            1100.942497253418,
+                            75.75542092323303
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.24941294256004676.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            73.36055755615234,
+                            393.4357738494873,
+                            1088.6830520629885,
+                            41.41253471374512
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.9134273982183879.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            64.3752670288086,
+                            176.6869032382965,
+                            1103.5853958129885,
+                            37.138906717300415
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.26183940266420713.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            72.64225006103516,
+                            355.99507570266724,
+                            1087.9919052124023,
+                            32.444751262664795
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.11581545182641395.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            69.30709838867188,
+                            312.2581601142884,
+                            885.0027465820312,
+                            33.0623459815979
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.3540527806659661.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            71.7513656616211,
+                            220.2843976020813,
+                            459.8986053466797,
+                            37.23386764526367
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.14510761454185117.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 290000,
+                        "box_info_original": [
+                            71.46549224853516,
+                            359.0201139450073,
+                            1091.0900497436523,
+                            72.27510452270508
+                        ],
+                        "path": "qabusidoc/052_2/052_2.84.png_text box_0.6680152119915982.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 30,
+                "slide_id": 29,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/053_2.86.png",
+                "start_time": 171.6,
+                "end_time": 171.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            66.91841125488281,
+                            178.91414523124695,
+                            1100.11474609375,
+                            75.79704880714417
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.6217232735465873.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            55.31272888183594,
+                            79.73956882953644,
+                            407.30445861816406,
+                            46.231825947761536
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_title_0.14045452205641262.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            70.51273345947266,
+                            265.15977144241333,
+                            1094.197654724121,
+                            38.090500831604
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.7597850256274754.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            70.07888793945312,
+                            395.3228902816773,
+                            1094.1517639160156,
+                            39.09184455871582
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.9317050199376233.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            69.43336486816406,
+                            354.62738513946533,
+                            1091.300048828125,
+                            35.92331886291504
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.7571539894728476.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            64.96891021728516,
+                            176.48773312568665,
+                            1102.7953720092771,
+                            37.56973385810852
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.8011633909978607.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            72.31868743896484,
+                            220.86246728897092,
+                            458.6077117919922,
+                            36.09508752822876
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.6206707456283689.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 300000,
+                        "box_info_original": [
+                            70.62721252441406,
+                            306.33856773376465,
+                            1091.3053894042969,
+                            43.44013452529907
+                        ],
+                        "path": "qabusidoc/053_2/053_2.86.png_text box_0.25322776603256636.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 31,
+                "slide_id": 30,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/054_2.86.png",
+                "start_time": 171.6,
+                "end_time": 183.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            66.91902160644531,
+                            178.91348004341123,
+                            1100.1148986816406,
+                            75.79829335212708
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.058067453094092225.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            70.49606323242188,
+                            265.16024351119995,
+                            1094.2233276367188,
+                            38.09058666229248
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.624652701995457.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            55.31333923339844,
+                            79.73935425281525,
+                            407.3033142089844,
+                            46.23222291469574
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_title_0.4103963821950891.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            70.0912857055664,
+                            395.3111743927002,
+                            1094.0923690795898,
+                            39.110426902771
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.061796128467415334.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            69.42264556884766,
+                            354.6320843696594,
+                            1091.3010787963867,
+                            35.919649600982666
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.05556753811770987.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            64.97112274169922,
+                            176.4873468875885,
+                            1102.7922439575195,
+                            37.57007718086243
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.5466110230549615.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            72.31840133666992,
+                            220.86199522018435,
+                            458.6084175109863,
+                            36.09579563140869
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.34251699790671564.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 310000,
+                        "box_info_original": [
+                            70.60707092285156,
+                            306.33732318878174,
+                            1091.3368225097656,
+                            43.43985557556152
+                        ],
+                        "path": "qabusidoc/054_2/054_2.86.png_text box_0.43619923496165713.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 32,
+                "slide_id": 31,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/055_3.06.png",
+                "start_time": 183.6,
+                "end_time": 198.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 320000,
+                        "box_info_original": [
+                            55.63152313232422,
+                            68.43982994556427,
+                            599.1292190551758,
+                            54.09644901752472
+                        ],
+                        "path": "qabusidoc/055_3/055_3.06.png_text box_0.3810140595818564.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 33,
+                "slide_id": 32,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/056_3.31.png",
+                "start_time": 198.6,
+                "end_time": 247.20000000000002,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 330000,
+                        "box_info_original": [
+                            55.89399337768555,
+                            68.35464835166931,
+                            598.7653541564941,
+                            54.18884038925171
+                        ],
+                        "path": "qabusidoc/056_3/056_3.31.png_text box_0.9976660015848356.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 34,
+                "slide_id": 33,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/057_4.12.png",
+                "start_time": 247.20000000000002,
+                "end_time": 262.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 340000,
+                        "box_info_original": [
+                            53.962135314941406,
+                            81.57456457614899,
+                            821.4336776733398,
+                            50.21930515766144
+                        ],
+                        "path": "qabusidoc/057_4/057_4.12.png_title_0.08170482875245089.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 340000,
+                        "box_info_original": [
+                            70.46615600585938,
+                            172.68307328224182,
+                            766.9956207275391,
+                            483.78071665763855
+                        ],
+                        "path": "qabusidoc/057_4/057_4.12.png_picture_0.5882826238487746.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 35,
+                "slide_id": 34,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/058_4.38.png",
+                "start_time": 262.8,
+                "end_time": 262.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 350000,
+                        "box_info_original": [
+                            54.06036376953125,
+                            81.90266847610474,
+                            821.7626953125,
+                            49.97308373451233
+                        ],
+                        "path": "qabusidoc/058_4/058_4.38.png_title_0.7900351300397773.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 350000,
+                        "box_info_original": [
+                            60.99597930908203,
+                            172.44762897491455,
+                            770.2579879760742,
+                            482.94512271881104
+                        ],
+                        "path": "qabusidoc/058_4/058_4.38.png_picture_0.6096861100201604.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 36,
+                "slide_id": 35,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/059_4.38.png",
+                "start_time": 262.8,
+                "end_time": 263.4,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 360000,
+                        "box_info_original": [
+                            54.06036376953125,
+                            81.90263628959656,
+                            821.7626953125,
+                            49.97314810752869
+                        ],
+                        "path": "qabusidoc/059_4/059_4.38.png_title_0.43675377275224736.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 360000,
+                        "box_info_original": [
+                            60.996360778808594,
+                            172.44598746299744,
+                            770.2566909790039,
+                            482.9474079608917
+                        ],
+                        "path": "qabusidoc/059_4/059_4.38.png_picture_0.8045229110954304.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 37,
+                "slide_id": 36,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/060_4.39.png",
+                "start_time": 263.4,
+                "end_time": 263.4,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 370000,
+                        "box_info_original": [
+                            54.06055450439453,
+                            81.90269529819489,
+                            821.7623519897461,
+                            49.97304618358612
+                        ],
+                        "path": "qabusidoc/060_4/060_4.39.png_title_0.6314414505588649.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 370000,
+                        "box_info_original": [
+                            60.995826721191406,
+                            172.44687795639038,
+                            770.2578353881836,
+                            482.9464316368103
+                        ],
+                        "path": "qabusidoc/060_4/060_4.39.png_picture_0.2186261895651883.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 38,
+                "slide_id": 37,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/061_4.39.png",
+                "start_time": 263.4,
+                "end_time": 263.4,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 380000,
+                        "box_info_original": [
+                            54.06055450439453,
+                            81.90269529819489,
+                            821.7623519897461,
+                            49.97304618358612
+                        ],
+                        "path": "qabusidoc/061_4/061_4.39.png_title_0.36971775573659205.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 380000,
+                        "box_info_original": [
+                            60.995826721191406,
+                            172.44687795639038,
+                            770.2578353881836,
+                            482.9464316368103
+                        ],
+                        "path": "qabusidoc/061_4/061_4.39.png_picture_0.5601618711487544.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 39,
+                "slide_id": 38,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/062_4.39.png",
+                "start_time": 263.4,
+                "end_time": 265.79999999999995,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 390000,
+                        "box_info_original": [
+                            54.06055450439453,
+                            81.90269529819489,
+                            821.7623519897461,
+                            49.97304618358612
+                        ],
+                        "path": "qabusidoc/062_4/062_4.39.png_title_0.9995197163506273.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 390000,
+                        "box_info_original": [
+                            60.995826721191406,
+                            172.44687795639038,
+                            770.2578353881836,
+                            482.9464316368103
+                        ],
+                        "path": "qabusidoc/062_4/062_4.39.png_picture_0.3169886658253175.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 40,
+                "slide_id": 39,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/063_4.43.png",
+                "start_time": 265.79999999999995,
+                "end_time": 270.59999999999997,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 400000,
+                        "box_info_original": [
+                            54.033164978027344,
+                            82.00055301189423,
+                            821.2627029418945,
+                            48.11289131641388
+                        ],
+                        "path": "qabusidoc/063_4/063_4.43.png_title_0.46397823317788267.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 400000,
+                        "box_info_original": [
+                            442.28214263916016,
+                            151.23193502426147,
+                            400.8257675170898,
+                            490.3234934806824
+                        ],
+                        "path": "qabusidoc/063_4/063_4.43.png_diagram_0.6824400843069428.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 41,
+                "slide_id": 40,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/064_4.51.png",
+                "start_time": 270.59999999999997,
+                "end_time": 292.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 410000,
+                        "box_info_original": [
+                            61.77803039550781,
+                            77.81009495258331,
+                            1090.6031799316406,
+                            53.748019337654114
+                        ],
+                        "path": "qabusidoc/064_4/064_4.51.png_title_0.9284724540600628.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 410000,
+                        "box_info_original": [
+                            818.2232666015625,
+                            160.11842608451843,
+                            334.1195678710937,
+                            473.3731663227081
+                        ],
+                        "path": "qabusidoc/064_4/064_4.51.png_picture_0.9277545172349235.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 410000,
+                        "box_info_original": [
+                            243.41407775878903,
+                            157.53695011138916,
+                            316.50634765625,
+                            487.7145195007324
+                        ],
+                        "path": "qabusidoc/064_4/064_4.51.png_picture_0.25749486364913865.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 410000,
+                        "box_info_original": [
+                            832.5791931152344,
+                            567.1079921722412,
+                            303.6634826660156,
+                            73.85735034942627
+                        ],
+                        "path": "qabusidoc/064_4/064_4.51.png_text box_0.3609789167909734.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 410000,
+                        "box_info_original": [
+                            241.75594329833984,
+                            157.3471999168396,
+                            910.5525588989258,
+                            492.9557490348816
+                        ],
+                        "path": "qabusidoc/064_4/064_4.51.png_picture_0.9589310629097013.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 42,
+                "slide_id": 41,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/065_4.88.png",
+                "start_time": 292.8,
+                "end_time": 331.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 420000,
+                        "box_info_original": [
+                            59.47410583496094,
+                            78.1651496887207,
+                            1132.9209899902344,
+                            54.64589953422546
+                        ],
+                        "path": "qabusidoc/065_4/065_4.88.png_title_0.3200691614309006.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 420000,
+                        "box_info_original": [
+                            103.22189331054688,
+                            160.94987869262695,
+                            1028.8491821289062,
+                            524.3301916122437
+                        ],
+                        "path": "qabusidoc/065_4/065_4.88.png_picture_0.8931953546683431.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 420000,
+                        "box_info_original": [
+                            286.5507507324219,
+                            220.7082939147949,
+                            591.268310546875,
+                            451.07919216156006
+                        ],
+                        "path": "qabusidoc/065_4/065_4.88.png_picture_0.018747089280975016.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 43,
+                "slide_id": 42,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/066_5.52.png",
+                "start_time": 331.2,
+                "end_time": 337.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 430000,
+                        "box_info_original": [
+                            54.15184020996094,
+                            174.8628294467926,
+                            724.1203308105469,
+                            38.92504334449768
+                        ],
+                        "path": "qabusidoc/066_5/066_5.52.png_text box_0.9523281808009855.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 430000,
+                        "box_info_original": [
+                            52.7777099609375,
+                            80.923672914505,
+                            823.5891723632812,
+                            52.45418071746826
+                        ],
+                        "path": "qabusidoc/066_5/066_5.52.png_title_0.8649611498230838.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 44,
+                "slide_id": 43,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/067_5.63.png",
+                "start_time": 337.8,
+                "end_time": 369.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 440000,
+                        "box_info_original": [
+                            534.9782562255859,
+                            332.5944972038269,
+                            213.82843017578125,
+                            56.982972621917725
+                        ],
+                        "path": "qabusidoc/067_5/067_5.63.png_text box_0.0902173419036727.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 45,
+                "slide_id": 44,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/071_6.15.png",
+                "start_time": 369.0,
+                "end_time": 369.6,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            55.20648956298828,
+                            78.83070766925812,
+                            432.031135559082,
+                            54.52517330646515
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_title_0.7138967605291403.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            57.90126800537109,
+                            266.602520942688,
+                            751.0649490356445,
+                            35.69713354110718
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.4976435804963869.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            60.340614318847656,
+                            373.1656551361084,
+                            1115.0881576538086,
+                            84.19419765472412
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.18087574781242344.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            65.07765769958496,
+                            177.80910730361938,
+                            191.55247688293457,
+                            33.356895446777344
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.7279933453194202.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            60.81110954284668,
+                            352.39166736602783,
+                            228.8716983795166,
+                            36.822052001953125
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.0049528466259262105.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            61.820411682128906,
+                            219.9730896949768,
+                            479.6144104003906,
+                            38.73347997665405
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.5718028944448071.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            60.611915588378906,
+                            308.8846063613892,
+                            234.80609893798828,
+                            34.793829917907715
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.5949350695078688.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            62.04360961914063,
+                            320.8060383796692,
+                            1111.557846069336,
+                            149.08410787582395
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.7707264960974889.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            58.32462310791016,
+                            269.248960018158,
+                            749.732780456543,
+                            70.565185546875
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.6894869939464023.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 450000,
+                        "box_info_original": [
+                            62.98133850097656,
+                            439.3884086608887,
+                            1108.67919921875,
+                            38.23087692260742
+                        ],
+                        "path": "qabusidoc/071_6/071_6.15.png_text box_0.07668705099217077.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 46,
+                "slide_id": 45,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/072_6.16.png",
+                "start_time": 369.6,
+                "end_time": 382.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            55.20673751831055,
+                            78.83046090602875,
+                            432.03081130981445,
+                            54.52569901943207
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_title_0.9966776097276462.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            57.90630340576172,
+                            266.60653352737427,
+                            751.0666275024414,
+                            35.69374322891235
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.4726586475097716.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            60.32684326171875,
+                            373.2042789459229,
+                            1115.0079345703125,
+                            84.08051490783691
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.3417366606664195.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            65.07786750793457,
+                            177.8095042705536,
+                            191.55207633972168,
+                            33.35624098777771
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.1245231463224179.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            60.81165313720703,
+                            352.38853454589844,
+                            228.8758850097656,
+                            36.82831764221192
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.7691503121081353.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            61.82332992553711,
+                            219.9744415283203,
+                            479.609317779541,
+                            38.73054027557373
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.591231913527571.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            60.617942810058594,
+                            308.88458490371704,
+                            234.77176666259768,
+                            34.79095458984375
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.761382793639985.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            62.03105926513672,
+                            320.81867694854736,
+                            1111.4607620239258,
+                            149.0481662750244
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.5757793578626711.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            58.32714080810547,
+                            269.2583155632019,
+                            749.7323989868164,
+                            70.54602384567261
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.9958657222417413.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 460000,
+                        "box_info_original": [
+                            63.07506561279297,
+                            439.3215036392212,
+                            1108.4527969360352,
+                            38.308167457580566
+                        ],
+                        "path": "qabusidoc/072_6/072_6.16.png_text box_0.4917134401871057.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 47,
+                "slide_id": 46,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/073_6.37.png",
+                "start_time": 382.2,
+                "end_time": 384.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 470000,
+                        "box_info_original": [
+                            54.64290618896485,
+                            78.54374885559082,
+                            440.8470916748047,
+                            49.44997787475586
+                        ],
+                        "path": "qabusidoc/073_6/073_6.37.png_text box_0.9225890979630902.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 48,
+                "slide_id": 47,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/080_6.4.png",
+                "start_time": 384.0,
+                "end_time": 397.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 480000,
+                        "box_info_original": [
+                            71.77631378173828,
+                            177.22737908363342,
+                            1031.9530868530271,
+                            78.56461644172668
+                        ],
+                        "path": "qabusidoc/080_6/080_6.4.png_text box_0.9886425074276382.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 480000,
+                        "box_info_original": [
+                            54.96753692626953,
+                            77.506383061409,
+                            438.9793395996094,
+                            48.98986637592316
+                        ],
+                        "path": "qabusidoc/080_6/080_6.4.png_title_0.902065979106772.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 49,
+                "slide_id": 48,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/084_6.62.png",
+                "start_time": 397.2,
+                "end_time": 397.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 490000,
+                        "box_info_original": [
+                            70.13076782226562,
+                            177.38951325416565,
+                            1034.9893188476562,
+                            78.17301392555237
+                        ],
+                        "path": "qabusidoc/084_6/084_6.62.png_text box_0.23242335376085532.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 490000,
+                        "box_info_original": [
+                            55.34370422363281,
+                            77.71338522434235,
+                            438.53614807128906,
+                            48.59409034252167
+                        ],
+                        "path": "qabusidoc/084_6/084_6.62.png_title_0.03139223652392997.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 490000,
+                        "box_info_original": [
+                            77.1990966796875,
+                            271.68811798095703,
+                            1000.7263946533204,
+                            63.10746431350708
+                        ],
+                        "path": "qabusidoc/084_6/084_6.62.png_text box_0.7995449738332141.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 50,
+                "slide_id": 49,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/085_6.62.png",
+                "start_time": 397.2,
+                "end_time": 397.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 500000,
+                        "box_info_original": [
+                            69.6768569946289,
+                            177.96613454818726,
+                            1035.1203536987305,
+                            77.40548372268677
+                        ],
+                        "path": "qabusidoc/085_6/085_6.62.png_text box_0.27656569561598676.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 500000,
+                        "box_info_original": [
+                            73.33213806152344,
+                            268.85418176651,
+                            1010.255889892578,
+                            69.63497400283813
+                        ],
+                        "path": "qabusidoc/085_6/085_6.62.png_text box_0.2187194142608142.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 500000,
+                        "box_info_original": [
+                            55.33510208129883,
+                            77.82456278800964,
+                            438.52705001831055,
+                            48.43660712242127
+                        ],
+                        "path": "qabusidoc/085_6/085_6.62.png_title_0.6288927341124485.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 51,
+                "slide_id": 50,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/086_6.63.png",
+                "start_time": 397.8,
+                "end_time": 397.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 510000,
+                        "box_info_original": [
+                            72.38933563232422,
+                            267.09394454956055,
+                            1018.2304763793944,
+                            72.4188494682312
+                        ],
+                        "path": "qabusidoc/086_6/086_6.63.png_text box_0.8615514607242329.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 510000,
+                        "box_info_original": [
+                            55.33267974853516,
+                            77.90884852409363,
+                            438.5189056396485,
+                            48.28014850616455
+                        ],
+                        "path": "qabusidoc/086_6/086_6.63.png_title_0.9050069897537384.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 510000,
+                        "box_info_original": [
+                            69.42401885986328,
+                            178.5795557498932,
+                            1034.7025680541992,
+                            76.88244223594666
+                        ],
+                        "path": "qabusidoc/086_6/086_6.63.png_text box_0.5645813397789855.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 510000,
+                        "box_info_original": [
+                            68.06079864501953,
+                            178.19669723510742,
+                            1038.9374923706057,
+                            36.75102710723877
+                        ],
+                        "path": "qabusidoc/086_6/086_6.63.png_text box_0.03744606744514345.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 52,
+                "slide_id": 51,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/087_6.63.png",
+                "start_time": 397.8,
+                "end_time": 397.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 520000,
+                        "box_info_original": [
+                            72.50045776367188,
+                            266.1624026298523,
+                            1018.030242919922,
+                            74.80127334594727
+                        ],
+                        "path": "qabusidoc/087_6/087_6.63.png_text box_0.3453620763613362.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 520000,
+                        "box_info_original": [
+                            55.33185958862305,
+                            77.94900119304657,
+                            438.5032844543457,
+                            48.19877564907074
+                        ],
+                        "path": "qabusidoc/087_6/087_6.63.png_title_0.6840277755714433.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 520000,
+                        "box_info_original": [
+                            69.25067901611328,
+                            178.7149965763092,
+                            1034.8403549194336,
+                            76.9561493396759
+                        ],
+                        "path": "qabusidoc/087_6/087_6.63.png_text box_0.9793278067881728.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 520000,
+                        "box_info_original": [
+                            67.81620025634766,
+                            178.32875847816467,
+                            1039.3671798706057,
+                            36.162110567092896
+                        ],
+                        "path": "qabusidoc/087_6/087_6.63.png_text box_0.2859336831078323.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 53,
+                "slide_id": 52,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/088_6.63.png",
+                "start_time": 397.8,
+                "end_time": 406.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 530000,
+                        "box_info_original": [
+                            72.51472473144531,
+                            266.095712184906,
+                            1017.90283203125,
+                            75.65820693969727
+                        ],
+                        "path": "qabusidoc/088_6/088_6.63.png_text box_0.7981772917259805.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 530000,
+                        "box_info_original": [
+                            55.328102111816406,
+                            77.95044958591461,
+                            438.5002136230469,
+                            48.19129765033722
+                        ],
+                        "path": "qabusidoc/088_6/088_6.63.png_title_0.8287136026483188.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 530000,
+                        "box_info_original": [
+                            69.16893005371094,
+                            178.69868874549866,
+                            1035.054931640625,
+                            77.03206658363342
+                        ],
+                        "path": "qabusidoc/088_6/088_6.63.png_text box_0.8636988790169752.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 530000,
+                        "box_info_original": [
+                            67.7490234375,
+                            178.30873847007751,
+                            1039.5440673828125,
+                            36.12346529960632
+                        ],
+                        "path": "qabusidoc/088_6/088_6.63.png_text box_0.2927219884948654.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 54,
+                "slide_id": 53,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/089_6.78.png",
+                "start_time": 406.8,
+                "end_time": 406.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 540000,
+                        "box_info_original": [
+                            55.26590347290039,
+                            77.91023254394531,
+                            438.5825920104981,
+                            48.18012356758118
+                        ],
+                        "path": "qabusidoc/089_6/089_6.78.png_title_0.47863448694877575.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 540000,
+                        "box_info_original": [
+                            70.88085174560547,
+                            266.207377910614,
+                            1012.9497146606444,
+                            77.71035432815552
+                        ],
+                        "path": "qabusidoc/089_6/089_6.78.png_text box_0.6688501542862967.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 540000,
+                        "box_info_original": [
+                            70.8319091796875,
+                            179.02692675590515,
+                            1030.763168334961,
+                            76.72219634056091
+                        ],
+                        "path": "qabusidoc/089_6/089_6.78.png_text box_0.7121535103438584.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 540000,
+                        "box_info_original": [
+                            69.34345245361328,
+                            178.27038288116455,
+                            1034.960594177246,
+                            36.14928960800171
+                        ],
+                        "path": "qabusidoc/089_6/089_6.78.png_text box_0.5480690008566929.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 540000,
+                        "box_info_original": [
+                            85.86158752441406,
+                            400.974326133728,
+                            798.3533477783203,
+                            25.71663379669189
+                        ],
+                        "path": "qabusidoc/089_6/089_6.78.png_text box_0.5844516845837958.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 55,
+                "slide_id": 54,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/090_6.78.png",
+                "start_time": 406.8,
+                "end_time": 406.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 550000,
+                        "box_info_original": [
+                            55.26235580444336,
+                            77.88511097431183,
+                            438.5788154602051,
+                            48.30236256122589
+                        ],
+                        "path": "qabusidoc/090_6/090_6.78.png_title_0.8835601488561678.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 550000,
+                        "box_info_original": [
+                            72.71305084228516,
+                            354.94914293289185,
+                            1128.9873886108398,
+                            78.59986066818237
+                        ],
+                        "path": "qabusidoc/090_6/090_6.78.png_text box_0.6930840204713341.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 550000,
+                        "box_info_original": [
+                            68.91162872314453,
+                            267.4072051048279,
+                            1029.163475036621,
+                            72.81695365905762
+                        ],
+                        "path": "qabusidoc/090_6/090_6.78.png_text box_0.01750828033774121.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 550000,
+                        "box_info_original": [
+                            71.6775131225586,
+                            178.97056818008423,
+                            1030.2885818481443,
+                            76.92684888839722
+                        ],
+                        "path": "qabusidoc/090_6/090_6.78.png_text box_0.24721374963570653.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 550000,
+                        "box_info_original": [
+                            70.45391082763672,
+                            178.31724643707275,
+                            1033.4309768676758,
+                            35.94801664352417
+                        ],
+                        "path": "qabusidoc/090_6/090_6.78.png_text box_0.44064887584198.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 56,
+                "slide_id": 55,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/091_6.78.png",
+                "start_time": 406.8,
+                "end_time": 407.4,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 560000,
+                        "box_info_original": [
+                            55.23576736450195,
+                            77.88199424743652,
+                            438.6195945739746,
+                            48.31254959106445
+                        ],
+                        "path": "qabusidoc/091_6/091_6.78.png_title_0.44247019467913107.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 560000,
+                        "box_info_original": [
+                            72.00443267822266,
+                            354.9061632156372,
+                            1129.6828842163086,
+                            78.23561668395996
+                        ],
+                        "path": "qabusidoc/091_6/091_6.78.png_text box_0.5278613731125478.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 560000,
+                        "box_info_original": [
+                            71.91268920898438,
+                            178.9534556865692,
+                            1029.9158477783203,
+                            76.99715495109558
+                        ],
+                        "path": "qabusidoc/091_6/091_6.78.png_text box_0.8985284412597769.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 560000,
+                        "box_info_original": [
+                            68.51776123046875,
+                            267.6431965827942,
+                            1030.4127502441406,
+                            72.55924701690674
+                        ],
+                        "path": "qabusidoc/091_6/091_6.78.png_text box_0.8805213353911845.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 560000,
+                        "box_info_original": [
+                            70.69992065429688,
+                            178.20284485816956,
+                            1032.961196899414,
+                            36.12033247947693
+                        ],
+                        "path": "qabusidoc/091_6/091_6.78.png_text box_0.021038450315407853.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 57,
+                "slide_id": 56,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/092_6.79.png",
+                "start_time": 407.4,
+                "end_time": 408.0,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            55.211219787597656,
+                            77.87839472293854,
+                            438.6534118652344,
+                            48.31503331661224
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_title_0.1023867788437478.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            71.61014556884766,
+                            354.97695207595825,
+                            1131.0741806030271,
+                            78.12255620956421
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_text box_0.7047035800891417.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            68.22502136230469,
+                            267.7742600440979,
+                            1031.3874816894531,
+                            72.40144729614258
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_text box_0.7537163911018877.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            71.96514129638672,
+                            178.9724349975586,
+                            1029.811897277832,
+                            76.98536396026611
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_text box_0.7395252537492318.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            71.07425689697266,
+                            355.00362396240234,
+                            1130.7867050170898,
+                            36.89148902893066
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_text box_0.8011862479900158.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 570000,
+                        "box_info_original": [
+                            70.78460693359375,
+                            178.165283203125,
+                            1032.7964782714844,
+                            36.15883827209473
+                        ],
+                        "path": "qabusidoc/092_6/092_6.79.png_text box_0.6206099302927974.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 58,
+                "slide_id": 57,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/095_6.8.png",
+                "start_time": 408.0,
+                "end_time": 416.40000000000003,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 580000,
+                        "box_info_original": [
+                            55.2082633972168,
+                            77.87303566932678,
+                            438.6607551574707,
+                            48.32380414009094
+                        ],
+                        "path": "qabusidoc/095_6/095_6.8.png_title_0.4005661762234658.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 580000,
+                        "box_info_original": [
+                            71.87610626220703,
+                            354.6909427642822,
+                            1130.9049606323242,
+                            79.39377307891846
+                        ],
+                        "path": "qabusidoc/095_6/095_6.8.png_text box_0.2079118744908065.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 580000,
+                        "box_info_original": [
+                            68.28304290771484,
+                            268.0319023132324,
+                            1031.1467361450195,
+                            71.6518235206604
+                        ],
+                        "path": "qabusidoc/095_6/095_6.8.png_text box_0.1406305375022856.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 580000,
+                        "box_info_original": [
+                            72.06546783447266,
+                            179.0403378009796,
+                            1029.6625900268557,
+                            76.8829357624054
+                        ],
+                        "path": "qabusidoc/095_6/095_6.8.png_text box_0.13971232123829225.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 580000,
+                        "box_info_original": [
+                            70.92918395996094,
+                            178.1917941570282,
+                            1032.5697326660156,
+                            36.084219217300415
+                        ],
+                        "path": "qabusidoc/095_6/095_6.8.png_text box_0.8140100935610829.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 59,
+                "slide_id": 58,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/096_6.94.png",
+                "start_time": 416.40000000000003,
+                "end_time": 460.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 590000,
+                        "box_info_original": [
+                            52.33161926269531,
+                            80.75447380542755,
+                            707.1797943115234,
+                            51.01336777210236
+                        ],
+                        "path": "qabusidoc/096_6/096_6.94.png_title_0.36260600349958505.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 590000,
+                        "box_info_original": [
+                            170.79086303710938,
+                            177.60244846343994,
+                            807.4674987792969,
+                            454.4502353668213
+                        ],
+                        "path": "qabusidoc/096_6/096_6.94.png_chart_0.20404844551313917.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 60,
+                "slide_id": 59,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/097_7.67.png",
+                "start_time": 460.2,
+                "end_time": 478.2,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 600000,
+                        "box_info_original": [
+                            57.246131896972656,
+                            78.67312252521515,
+                            1073.6611557006836,
+                            51.35824620723725
+                        ],
+                        "path": "qabusidoc/097_7/097_7.67.png_text box_0.9151879419519019.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 61,
+                "slide_id": 60,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/098_7.97.png",
+                "start_time": 478.2,
+                "end_time": 478.8,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 610000,
+                        "box_info_original": [
+                            50.355262756347656,
+                            437.0243740081787,
+                            1017.0286178588868,
+                            82.13855266571045
+                        ],
+                        "path": "qabusidoc/098_7/098_7.97.png_text box_0.02726831274747754.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 610000,
+                        "box_info_original": [
+                            57.398223876953125,
+                            78.8534152507782,
+                            1070.208511352539,
+                            50.62332630157471
+                        ],
+                        "path": "qabusidoc/098_7/098_7.97.png_title_0.8389494663349855.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 610000,
+                        "box_info_original": [
+                            71.14612579345703,
+                            179.7751235961914,
+                            680.6684494018555,
+                            166.6793131828308
+                        ],
+                        "path": "qabusidoc/098_7/098_7.97.png_text box_0.611687502095374.jpg"
+                    }
+                ]
+            },
+            {
+                "shot_id": 62,
+                "slide_id": 61,
+                "ratio": 0.3,
+                "column": 0,
+                "bg_image": "background/100_7.98.png",
+                "start_time": 478.8,
+                "end_time": 499.20000000000005,
+                "learning_material": [
+                    {
+                        "label": "picture",
+                        "slide_id": 620000,
+                        "box_info_original": [
+                            50.355262756347656,
+                            437.0243740081787,
+                            1017.0286178588868,
+                            82.13855266571045
+                        ],
+                        "path": "qabusidoc/100_7/100_7.98.png_text box_0.35855227559694214.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 620000,
+                        "box_info_original": [
+                            57.398223876953125,
+                            78.8534152507782,
+                            1070.208511352539,
+                            50.62332630157471
+                        ],
+                        "path": "qabusidoc/100_7/100_7.98.png_title_0.5332219268732545.jpg"
+                    },
+                    {
+                        "label": "picture",
+                        "slide_id": 620000,
+                        "box_info_original": [
+                            71.14612579345703,
+                            179.7751235961914,
+                            680.6684494018555,
+                            166.6793131828308
+                        ],
+                        "path": "qabusidoc/100_7/100_7.98.png_text box_0.8361808320267587.jpg"
+                    }
+                ]
+            }   
+        ]
+    }
+}

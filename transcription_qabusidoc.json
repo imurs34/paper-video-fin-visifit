@@ -1,0 +1,647 @@
+[
+    {
+        "index": 1,
+        "start": "00:02",
+        "text": "Hi all, I\u2019m Farnaz Jahanbakhsh, and I\u2019ll be presenting the paper Understanding Questions"
+    },
+    {
+        "index": 2,
+        "start": "00:07",
+        "text": "that Arise When Working with Business Documents, that I worked on during my internship at Microsoft"
+    },
+    {
+        "index": 3,
+        "start": "00:12",
+        "text": "Research along with my amazing mentors Elanz Nouri, Robert Sim, Ryen White, and Adam Fourney."
+    },
+    {
+        "index": 4,
+        "start": "00:19",
+        "text": "Many systems have been increasingly incorporating intelligent digital assistants to help people"
+    },
+    {
+        "index": 5,
+        "start": "00:23",
+        "text": "be more productive, at home, as well as at work e.g., for scheduling meetings or for"
+    },
+    {
+        "index": 6,
+        "start": "00:28",
+        "text": "managing task lists."
+    },
+    {
+        "index": 7,
+        "start": "00:30",
+        "text": "But one workplace area of interest that hasn\u2019t seen much progress in this regard is documents."
+    },
+    {
+        "index": 8,
+        "start": "00:35",
+        "text": "An assistant in this context could help people consume written documents or perform complex"
+    },
+    {
+        "index": 9,
+        "start": "00:39",
+        "text": "tasks on documents more quickly."
+    },
+    {
+        "index": 10,
+        "start": "00:42",
+        "text": "But to achieve this vision and build an agent that is prepared to handle a variety of requests"
+    },
+    {
+        "index": 11,
+        "start": "00:47",
+        "text": "from the user, we first need to understand what types of assistance people would want"
+    },
+    {
+        "index": 12,
+        "start": "00:51",
+        "text": "as they are working on their business documents."
+    },
+    {
+        "index": 13,
+        "start": "00:53",
+        "text": "Aren\u2019t there already datasets for document Q&A that can tell us the types of assistance"
+    },
+    {
+        "index": 14,
+        "start": "00:58",
+        "text": "people want?"
+    },
+    {
+        "index": 15,
+        "start": "00:59",
+        "text": "Most datasets for document question answering contain factoid questions that were generated"
+    },
+    {
+        "index": 16,
+        "start": "01:05",
+        "text": "by crowd workers who were given a collection of documents and were tasked with generating"
+    },
+    {
+        "index": 17,
+        "start": "01:09",
+        "text": "questions for those."
+    },
+    {
+        "index": 18,
+        "start": "01:11",
+        "text": "And some datasets contain search queries on documents found on the Web."
+    },
+    {
+        "index": 19,
+        "start": "01:16",
+        "text": "Now why aren\u2019t these enough for the context of a document assistant that we\u2019re envisioning?"
+    },
+    {
+        "index": 20,
+        "start": "01:21",
+        "text": "Because first, the documents in these datasets were in their final published form, and second,"
+    },
+    {
+        "index": 21,
+        "start": "01:27",
+        "text": "query generators often assumed or had the role of \u201creader\u201d, with only limited knowledge"
+    },
+    {
+        "index": 22,
+        "start": "01:33",
+        "text": "of what the document contained."
+    },
+    {
+        "index": 23,
+        "start": "01:35",
+        "text": "And neither one of these is necessarily true when people are interacting with business"
+    },
+    {
+        "index": 24,
+        "start": "01:38",
+        "text": "documents and need help with them."
+    },
+    {
+        "index": 25,
+        "start": "01:41",
+        "text": "Business documents could be under development and may not be finalized yet and the users"
+    },
+    {
+        "index": 26,
+        "start": "01:45",
+        "text": "who need to work with these documents may have prior interactions with them, and may"
+    },
+    {
+        "index": 27,
+        "start": "01:49",
+        "text": "not want to only read, but also review, or edit the document."
+    },
+    {
+        "index": 28,
+        "start": "01:53",
+        "text": "So to understand users\u2019 actual needs in this setting, it\u2019s important that we involve"
+    },
+    {
+        "index": 29,
+        "start": "01:58",
+        "text": "authors, reviewers, and readers of such documents in the process of generating queries."
+    },
+    {
+        "index": 30,
+        "start": "02:03",
+        "text": "In addition, for these questions to have ecological validity, we need to collect them in-situ"
+    },
+    {
+        "index": 31,
+        "start": "02:09",
+        "text": "as users are working on their documents and their information needs arise."
+    },
+    {
+        "index": 32,
+        "start": "02:14",
+        "text": "This brings us to two of our research questions: What types of document-related questions do"
+    },
+    {
+        "index": 33,
+        "start": "02:19",
+        "text": "people desire support with from a digital assistant?"
+    },
+    {
+        "index": 34,
+        "start": "02:23",
+        "text": "How are the distribution of questions different depending on whether the user is an author,"
+    },
+    {
+        "index": 35,
+        "start": "02:27",
+        "text": "reviewer, or reader of the document?"
+    },
+    {
+        "index": 36,
+        "start": "02:30",
+        "text": "We expected that answering some of the potential questions would be beyond the capabilities"
+    },
+    {
+        "index": 37,
+        "start": "02:36",
+        "text": "of current systems and there may be a need for human intelligence."
+    },
+    {
+        "index": 38,
+        "start": "02:40",
+        "text": "We hypothesized that if a Q&A system in this domain were to be deployed to accommodate"
+    },
+    {
+        "index": 39,
+        "start": "02:44",
+        "text": "user needs, at least for the present, it would need to incorporate human workers."
+    },
+    {
+        "index": 40,
+        "start": "02:49",
+        "text": "And that brings us to our 3rd research question: What skillsets and roles are needed from human"
+    },
+    {
+        "index": 41,
+        "start": "02:54",
+        "text": "respondents to accommodate requests in a human-in-the-loop document Q&A assistant?"
+    },
+    {
+        "index": 42,
+        "start": "02:59",
+        "text": "We conducted two user studies to answer our research questions."
+    },
+    {
+        "index": 43,
+        "start": "03:02",
+        "text": "In the first study, we used an experience-sampling method to collect users\u2019 questions about"
+    },
+    {
+        "index": 44,
+        "start": "03:08",
+        "text": "their documents."
+    },
+    {
+        "index": 45,
+        "start": "03:10",
+        "text": "This we did through a Microsoft word add-in that we built which at random points throughout"
+    },
+    {
+        "index": 46,
+        "start": "03:14",
+        "text": "the day when a user was working on their document would prompt them and ask what question they"
+    },
+    {
+        "index": 47,
+        "start": "03:18",
+        "text": "had about the document at that moment."
+    },
+    {
+        "index": 48,
+        "start": "03:21",
+        "text": "The prompt would also ask a few followup questions about the context."
+    },
+    {
+        "index": 49,
+        "start": "03:25",
+        "text": "E.g., who the user believed could answer their question best and how long it would take the"
+    },
+    {
+        "index": 50,
+        "start": "03:29",
+        "text": "user themselves to answer the question."
+    },
+    {
+        "index": 51,
+        "start": "03:31",
+        "text": "In addition, we automatically collected some metadata about the document such as who the"
+    },
+    {
+        "index": 52,
+        "start": "03:36",
+        "text": "author was and who was the most recent contributor."
+    },
+    {
+        "index": 53,
+        "start": "03:39",
+        "text": "Users could also submit a question whenever they wanted w/o having to wait for the prompt"
+    },
+    {
+        "index": 54,
+        "start": "03:43",
+        "text": "or even refrain from answering when prompted."
+    },
+    {
+        "index": 55,
+        "start": "03:46",
+        "text": "We recruited 59 users who were employees of Microsoft to participate in this study."
+    },
+    {
+        "index": 56,
+        "start": "03:51",
+        "text": "They installed the add-in and submitted questions for a week."
+    },
+    {
+        "index": 57,
+        "start": "03:56",
+        "text": "The experience sampling in study 1 was a step along the path to our vision of a hybrid human-AI"
+    },
+    {
+        "index": 58,
+        "start": "04:01",
+        "text": "document Q&A system."
+    },
+    {
+        "index": 59,
+        "start": "04:03",
+        "text": "We also wanted to explore our research questions in the context of an actual prototype of the"
+    },
+    {
+        "index": 60,
+        "start": "04:07",
+        "text": "type of Q&A system that we ultimately envision."
+    },
+    {
+        "index": 61,
+        "start": "04:12",
+        "text": "So as a second study, we designed and developed a human-in-the-loop system that collected"
+    },
+    {
+        "index": 62,
+        "start": "04:16",
+        "text": "users\u2019 questions about their documents and provided responses to them."
+    },
+    {
+        "index": 63,
+        "start": "04:20",
+        "text": "This system consisted of an AI component and human workers who supervised the AI and answered"
+    },
+    {
+        "index": 64,
+        "start": "04:26",
+        "text": "questions if the AI failed to provide a satisfactory answer."
+    },
+    {
+        "index": 65,
+        "start": "04:29",
+        "text": "In this study too, users submitted their questions about the document through a Word add-in."
+    },
+    {
+        "index": 66,
+        "start": "04:34",
+        "text": "With each question, users submitted a share link to the document if they consented to"
+    },
+    {
+        "index": 67,
+        "start": "04:39",
+        "text": "the digital assistant or a human knowledge worker accessing the document to answer their"
+    },
+    {
+        "index": 68,
+        "start": "04:43",
+        "text": "question."
+    },
+    {
+        "index": 69,
+        "start": "04:44",
+        "text": "Once a question had been answered, the answer would appear below the question in the Add-in"
+    },
+    {
+        "index": 70,
+        "start": "04:49",
+        "text": "and the users would receive an email notification about the answer."
+    },
+    {
+        "index": 71,
+        "start": "04:52",
+        "text": "The knowledge workers\u2019 view contained all the questions submitted by users."
+    },
+    {
+        "index": 72,
+        "start": "04:57",
+        "text": "As each question arrived, the workers performed the task of determining whether the question"
+    },
+    {
+        "index": 73,
+        "start": "05:01",
+        "text": "was answerable, or the type of the question (e.g., if it was about the document\u2019s content"
+    },
+    {
+        "index": 74,
+        "start": "05:06",
+        "text": "or its metadata or its visual style and so on), whether there was any specific domain"
+    },
+    {
+        "index": 75,
+        "start": "05:10",
+        "text": "knowledge needed to answer the question, etc."
+    },
+    {
+        "index": 76,
+        "start": "05:13",
+        "text": "The workers had different workflows for answering questions of different types."
+    },
+    {
+        "index": 77,
+        "start": "05:17",
+        "text": "For example, for answering content related questions, they would access the document"
+    },
+    {
+        "index": 78,
+        "start": "05:21",
+        "text": "using the share link, copy paste the document\u2019s text and the question into a custom UI front-end"
+    },
+    {
+        "index": 79,
+        "start": "05:26",
+        "text": "for the ML Q&A model."
+    },
+    {
+        "index": 80,
+        "start": "05:28",
+        "text": "And would change the answer if it was unsatisfactory."
+    },
+    {
+        "index": 81,
+        "start": "05:30",
+        "text": "41 participants recruited from microsoft participated in this study and worked with the add-in for"
+    },
+    {
+        "index": 82,
+        "start": "05:36",
+        "text": "2 weeks."
+    },
+    {
+        "index": 83,
+        "start": "05:38",
+        "text": "To answer our first research question about what types of questions people want assistance with, we"
+    },
+    {
+        "index": 84,
+        "start": "05:42",
+        "text": "categorized the questions of both our studies based on what type of information they were"
+    },
+    {
+        "index": 85,
+        "start": "05:47",
+        "text": "asking for and where that information was available."
+    },
+    {
+        "index": 86,
+        "start": "05:50",
+        "text": "Here\u2019s the overview of the categories."
+    },
+    {
+        "index": 87,
+        "start": "05:52",
+        "text": "We had questions asking about the metadata of the document, others about how to perform"
+    },
+    {
+        "index": 88,
+        "start": "05:57",
+        "text": "a specific task in Microsoft Word, questions about the content some of which required some"
+    },
+    {
+        "index": 89,
+        "start": "06:02",
+        "text": "amount of reasoning, questions about the written or the visual style of the document, and questions"
+    },
+    {
+        "index": 90,
+        "start": "06:07",
+        "text": "looking for information that was not even in the document and which could be found either"
+    },
+    {
+        "index": 91,
+        "start": "06:11",
+        "text": "in public resources, or within the company, or which needed to be directed to domain experts,"
+    },
+    {
+        "index": 92,
+        "start": "06:17",
+        "text": "and so on."
+    },
+    {
+        "index": 93,
+        "start": "06:18",
+        "text": "I encourage you to read about the full taxonomy in our paper."
+    },
+    {
+        "index": 94,
+        "start": "06:22",
+        "text": "What was interesting was that there were only a few questions that the AI could answer and"
+    },
+    {
+        "index": 95,
+        "start": "06:26",
+        "text": "the rest had to be answered by human knowledge workers."
+    },
+    {
+        "index": 96,
+        "start": "06:29",
+        "text": "The types of questions that the AI could handle were limited to factual content-related questions"
+    },
+    {
+        "index": 97,
+        "start": "06:33",
+        "text": "because for those the AI could retrieve a passage from the document."
+    },
+    {
+        "index": 98,
+        "start": "06:37",
+        "text": "The finding that the AI couldn\u2019t handle most questions suggests that at least for"
+    },
+    {
+        "index": 99,
+        "start": "06:40",
+        "text": "the present, the type of tool that we envision needs to employ a combination of automation"
+    },
+    {
+        "index": 100,
+        "start": "06:44",
+        "text": "and human intelligence."
+    },
+    {
+        "index": 101,
+        "start": "06:45",
+        "text": "But the questions, documents, and the human generated responses of a hybrid Q&A system"
+    },
+    {
+        "index": 102,
+        "start": "06:51",
+        "text": "can serve as ecologically valid training data for building future Q&A models."
+    },
+    {
+        "index": 103,
+        "start": "06:56",
+        "text": "To answer RQ2, we examined whether the types of questions a user asks about a document"
+    },
+    {
+        "index": 104,
+        "start": "07:02",
+        "text": "vary by the user\u2019s role in the document, e.g if they\u2019re the author, a reviewer, or"
+    },
+    {
+        "index": 105,
+        "start": "07:06",
+        "text": "a reader."
+    },
+    {
+        "index": 106,
+        "start": "07:08",
+        "text": "We found that the user\u2019s role was in fact a factor in the type of questions that they"
+    },
+    {
+        "index": 107,
+        "start": "07:12",
+        "text": "asked."
+    },
+    {
+        "index": 108,
+        "start": "07:13",
+        "text": "E.g., authors were often concerned with performing specific operations in Word or finding information"
+    },
+    {
+        "index": 109,
+        "start": "07:18",
+        "text": "external to the document."
+    },
+    {
+        "index": 110,
+        "start": "07:20",
+        "text": "Readers interestingly also asked questions about external information but those information needs had"
+    },
+    {
+        "index": 111,
+        "start": "07:25",
+        "text": "arisen because they had encountered something in the document\u2019s content that they didn\u2019t"
+    },
+    {
+        "index": 112,
+        "start": "07:29",
+        "text": "have enough context for."
+    },
+    {
+        "index": 113,
+        "start": "07:30",
+        "text": "So, it\u2019s not enough to only ask readers, or people unfamiliar with a document, about"
+    },
+    {
+        "index": 114,
+        "start": "07:35",
+        "text": "their questions."
+    },
+    {
+        "index": 115,
+        "start": "07:36",
+        "text": "Their questions would be different from what users with other roles would ask."
+    },
+    {
+        "index": 116,
+        "start": "07:40",
+        "text": "Now about our third research question: We found that many of the questions that users"
+    },
+    {
+        "index": 117,
+        "start": "07:44",
+        "text": "would want help with can\u2019t be answered by an AI and that human knowledge has to be"
+    },
+    {
+        "index": 118,
+        "start": "07:48",
+        "text": "incorporated into the document Q&A system that we envision at least for the present."
+    },
+    {
+        "index": 119,
+        "start": "07:53",
+        "text": "But who should the human respondents be and what kind of roles and skillsets should they"
+    },
+    {
+        "index": 120,
+        "start": "07:57",
+        "text": "have?"
+    },
+    {
+        "index": 121,
+        "start": "07:58",
+        "text": "In our study, the types of respondents needed included the document author, document collaborators"
+    },
+    {
+        "index": 122,
+        "start": "08:03",
+        "text": "experts in various domains e.g., finance, legal, marketing, or software engineering."
+    },
+    {
+        "index": 123,
+        "start": "08:08",
+        "text": "and human workers with a more general skill set"
+    },
+    {
+        "index": 124,
+        "start": "08:10",
+        "text": "So, a document assistant would need to classify and route questions to the appropriate respondents."
+    },
+    {
+        "index": 125,
+        "start": "08:17",
+        "text": "In our paper, we suggest ways this could be achieved."
+    },
+    {
+        "index": 126,
+        "start": "08:19",
+        "text": "In our paper, we further discuss opportunities for automating the handling of different types"
+    },
+    {
+        "index": 127,
+        "start": "08:24",
+        "text": "of questions in this domain, as well as the opportunities and the potential challenges"
+    },
+    {
+        "index": 128,
+        "start": "08:25",
+        "text": "of Incorporating Humans in the Loop in such a system."
+    },
+    {
+        "index": 129,
+        "start": "08:26",
+        "text": "I invite you to check out our paper to learn more."
+    }
+]

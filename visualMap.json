@@ -1,0 +1,33 @@
+{
+  "visual_mappings": [
+      {
+          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.9277545172349235.jpg",
+          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
+      },
+      {
+          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.9589310629097013.jpg",
+          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
+      },
+      {
+          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.25749486364913865.jpg",
+          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
+      },
+      {
+          "image_path": "qabusidoc/064_4/064_4.51.png_title_0.9284724540600628.jpg",
+          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
+      },
+      {
+          "image_path": "qabusidoc/065_4/065_4.88.png_picture_0.8931953546683431.jpg",
+          "caption": "Fig. 3. The document Q&A worker view. Each question that was submitted via the Q&A addin would be visible in this system and workers could visit the document to answer the question. Additionally, workers could move the questions to different queues (filters seen on the left) or assign tags to each question (seen on the right)."
+      },
+      {
+          "image_path": "qabusidoc/065_4/065_4.88.png_picture_0.018747089280975016.jpg",
+          "caption": "Fig. 3. The document Q&A worker view. Each question that was submitted via the Q&A addin would be visible in this system and workers could visit the document to answer the question. Additionally, workers could move the questions to different queues (filters seen on the left) or assign tags to each question (seen on the right)."
+      },
+      {
+          "image_path": "qabusidoc/096_6/096_6.94.png_chart_0.20404844551313917.jpg",
+          "caption": "Fig. 4. Distributions of question types by the role of the user in the document. Each bar shows the ratio of the question type relative to all questions asked by users with similar role."
+      }
+  ]
+  
+}
