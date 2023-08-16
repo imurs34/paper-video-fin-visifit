@@ -1,33 +1,362 @@
 {
   "visual_mappings": [
-      {
-          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.9277545172349235.jpg",
-          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
-      },
-      {
-          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.9589310629097013.jpg",
-          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
-      },
-      {
-          "image_path": "qabusidoc/064_4/064_4.51.png_picture_0.25749486364913865.jpg",
-          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
-      },
-      {
-          "image_path": "qabusidoc/064_4/064_4.51.png_title_0.9284724540600628.jpg",
-          "caption": "Fig. 2. The Q&A add-in from Phase 2. The image on the left shows some questions that the user has asked about the document on the collapsed tiles. The green notification icon indicates that the question has been answered but the user has not yet viewed the answer. The image in the center displays the full question and the answer. Once an answer is viewed, the notification icon is changed to a checkmark. The image on the right shows another question from another document which could not be answered. The status is shown with a warning icon."
-      },
-      {
-          "image_path": "qabusidoc/065_4/065_4.88.png_picture_0.8931953546683431.jpg",
-          "caption": "Fig. 3. The document Q&A worker view. Each question that was submitted via the Q&A addin would be visible in this system and workers could visit the document to answer the question. Additionally, workers could move the questions to different queues (filters seen on the left) or assign tags to each question (seen on the right)."
-      },
-      {
-          "image_path": "qabusidoc/065_4/065_4.88.png_picture_0.018747089280975016.jpg",
-          "caption": "Fig. 3. The document Q&A worker view. Each question that was submitted via the Q&A addin would be visible in this system and workers could visit the document to answer the question. Additionally, workers could move the questions to different queues (filters seen on the left) or assign tags to each question (seen on the right)."
-      },
-      {
-          "image_path": "qabusidoc/096_6/096_6.94.png_chart_0.20404844551313917.jpg",
-          "caption": "Fig. 4. Distributions of question types by the role of the user in the document. Each bar shows the ratio of the question type relative to all questions asked by users with similar role."
-      }
+    {
+      "image_path": "visifit/002_0/002_0.16.png_diagram_0.0688900142651322.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/003_0/003_0.24.png_picture_0.5788616611085565.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/004_0/004_0.29.png_picture_0.5219168646475915.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/004_0/004_0.29.png_picture_0.9463756619287393.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/006_0/006_0.4.png_picture_0.41420539139094004.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/007_0/007_0.43.png_picture_0.9527929400129811.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/008_0/008_0.61.png_picture_0.2934724494376929.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter."
+    },
+    {
+      "image_path": "visifit/012_1/012_1.22.png_picture_0.5895297173813658.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/012_1/012_1.22.png_picture_0.9183083044423888.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/013_1/013_1.27.png_picture_0.5296842220273859.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/013_1/013_1.27.png_picture_0.5552969924765107.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/014_1/014_1.3.png_picture_0.8527930220706662.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/014_1/014_1.3.png_picture_0.9049886961627043.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/015_1/015_1.39.png_picture_0.9198261740197011.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/015_1/015_1.39.png_picture_0.9952708243844092.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/015_1/015_1.39.png_picture_0.12382294548735662.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/016_1/016_1.64.png_footer_0.5806444971144772.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/016_1/016_1.64.png_picture_0.2675244104853397.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/016_1/016_1.64.png_picture_0.9238613380644969.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/016_1/016_1.64.png_picture_0.35883613202827247.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/016_1/016_1.64.png_picture_0.38950837482941125.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_chart_0.6463553634733139.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_footer_0.7216421630201838.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_picture_0.965523766649912.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_picture_0.4133612869319415.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_picture_0.9293590241620981.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/017_2/017_2.04.png_picture_0.30979128930469724.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/018_2/018_2.21.png_footer_0.7554962203807264.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/018_2/018_2.21.png_picture_0.779879722398478.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/018_2/018_2.21.png_picture_0.05928448533617792.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/019_2/019_2.23.png_footer_0.7017133819477959.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/019_2/019_2.23.png_picture_0.5680892198519248.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/019_2/019_2.23.png_picture_0.21521961070718076.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/020_2/020_2.29.png_footer_0.15395796526941874.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/020_2/020_2.29.png_picture_0.4315666739128098.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/020_2/020_2.29.png_picture_0.9448148070514261.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/021_2/021_2.34.png_footer_0.5914330616011605.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/021_2/021_2.34.png_picture_0.414119625118166.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/021_2/021_2.34.png_picture_0.3639625859763682.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/021_2/021_2.34.png_picture_0.46951086691210275.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/022_2/022_2.38.png_picture_0.4313070621121827.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/022_2/022_2.38.png_picture_0.7922201176821124.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    
+    {
+      "image_path": "visifit/022_2/022_2.38.png_picture_0.010700648367066412.jpg",
+      "caption": "Figure 5: The fve steps of the VisiFit pipeline for improving blends. In steps 1 and 2, the user extracts the main shape of both objects and adjusts their overlap. In steps 3-5, the user blends the images. There are two options for selecting a silhouette, fve options for color blending (only four are shown), and a tool to select and re-apply internal details. Each step builds on the selected output from the previous step (indicated by a blue border.) Once the user is happy with the blend, they select it as the fnal output (indicated in a green border.)"
+    },
+    {
+      "image_path": "visifit/024_2/024_2.55.png_chart_0.060460022500530064.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/025_2/025_2.59.png_chart_0.5042419260440729.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/025_2/025_2.59.png_chart_0.7866991468571414.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/025_2/025_2.59.png_chart_0.08921346537919783.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/025_2/025_2.59.png_chart_0.10131023253369542.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_chart_0.86632444561809.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_chart_0.5616794423376172.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_chart_0.7140138099190929.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_chart_0.18703848395615286.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_footer_0.22932664042521667.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_picture_0.7679076439682548.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/026_2/026_2.68.png_picture_0.8628808960568709.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/027_2/027_2.87.png_chart_0.4897541584968693.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/027_2/027_2.87.png_footer_0.11917255563443752.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/027_2/027_2.87.png_picture_0.0347502114481254.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/027_2/027_2.87.png_picture_0.8673520955414049.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/028_2/028_2.92.png_chart_0.09257367040306275.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/028_2/028_2.92.png_chart_0.29350699847979345.jpg",
+      "caption": "Figure 4: Three visual blends improved by graphic designers. For each blend, the columns show what two objects were initially blended, what the initial blend from VisiBlends produced, what secondary dimension(s) the artists improved, and the resulting improved blend."
+    },
+    {
+      "image_path": "visifit/029_3/029_3.06.png_picture_0.4334253955173185.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/030_3/030_3.07.png_picture_0.09748229926283669.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/031_3/031_3.08.png_picture_0.2921140763005654.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/032_3/032_3.13.png_picture_0.7753617448519822.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/033_3/033_3.18.png_picture_0.08882211878073132.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/034_3/034_3.25.png_picture_0.7538138751534224.jpg",
+      "caption": "Figure 6: Examples of initial and improved prototypes from the VisiFit user study. The frst column shows three blends that were deemed “improved and publishable”. The second column shows three blends that were deemed “improved but not pub-lishable”. The third column shows two blends that were deemed “not improved and not publishable”."
+    },
+    {
+      "image_path": "visifit/040_3/040_3.89.png_picture_0.998721860863201.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/040_3/040_3.89.png_picture_0.1081512743684937.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/040_3/040_3.89.png_picture_0.4849985280144584.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/041_4/041_4.01.png_picture_0.8528838490661084.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/041_4/041_4.01.png_picture_0.9406235929149089.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/041_4/041_4.01.png_picture_0.17806268533497416.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/042_4/042_4.15.png_picture_0.3625829437789526.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/042_4/042_4.15.png_picture_0.08263819879304612.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/042_4/042_4.15.png_picture_0.8999615957393776.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/042_4/042_4.15.png_picture_0.38523784618394796.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/042_4/042_4.15.png_picture_0.41928604119388746.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/043_4/043_4.18.png_picture_0.2108672109693721.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/043_4/043_4.18.png_picture_0.5274816156529336.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/043_4/043_4.18.png_picture_0.7895567914137872.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/043_4/043_4.18.png_picture_0.9424795136180623.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/043_4/043_4.18.png_picture_0.19344226071513138.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/044_4/044_4.26.png_picture_0.6504407524703535.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/044_4/044_4.26.png_picture_0.6898189107134519.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/044_4/044_4.26.png_picture_0.9819722705946626.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/044_4/044_4.26.png_picture_0.14764261839766002.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/044_4/044_4.26.png_picture_0.45876310340959614.jpg",
+      "caption": "Figure 7: Three examples of visual blends that could be turned into animated blends. Each row shows the original visual blend on the left, the reference video in the middle, and the animated blend on the right. Motion is annotated in red."
+    },
+    {
+      "image_path": "visifit/045_4/045_4.31.png_picture_0.4924792722640021.jpg",
+      "caption": "Figure 1: Two examples of how the VisiFit system can improve a visual blend prototype in under 4 minutes. The left image blends New York City and autumn. The right image blends navel orange and winter"
+    }
   ]
   
 }
